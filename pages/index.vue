@@ -31,7 +31,7 @@
     <div class="about--container__image">
       <div class="about--container__image--img">
         <NuxtImg
-          src="/about-img.png"
+          src="public/about-img.png"
           alt="about image" />
       </div>
     </div>
