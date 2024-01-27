@@ -13,9 +13,7 @@ export default defineNuxtConfig({
   },
 
   modules: ["@nuxt/image"],
-  alias: {
-    "~": "/src",
-  },
+
   images: {
     baseURL: "https://nizaro.netlify.app", // Add your Netlify URL here
   },
