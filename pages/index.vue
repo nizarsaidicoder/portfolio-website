@@ -211,6 +211,7 @@
     }
     &--blob {
       position: absolute;
+      width: 30%;
       top: 0;
       left: 0;
       animation: bounce 8s infinite;
@@ -463,6 +464,8 @@
   }
   .cube {
     position: absolute;
+    width: 50%;
+
     top: 0;
     left: 0;
     z-index: -2;
