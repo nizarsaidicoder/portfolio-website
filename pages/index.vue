@@ -4,13 +4,13 @@
     id="home"
     class="home--container">
     <div class="blobs">
-      <NuxtImg
+      <img
         class="home--blob home--blob-1"
         src="/blob-1.png" />
-      <NuxtImg
+      <img
         class="home--blob home--blob-2"
         src="/blob-2.png" />
-      <NuxtImg
+      <img
         class="home--blob home--blob-3"
         src="/blob-3.png" />
     </div>
@@ -30,7 +30,7 @@
     class="about--container">
     <div class="about--container__image">
       <div class="about--container__image--img">
-        <NuxtImg
+        <img
           src="/about-img.png"
           alt="about image" />
       </div>
@@ -74,10 +74,10 @@
     id="collaboration"
     class="collaboration-container">
     <div class="cubes">
-      <NuxtImg
+      <img
         class="cube cube-1"
         src="/cube-1.png" />
-      <NuxtImg
+      <img
         class="cube cube-2"
         src="/cube-2.png" />
     </div>
@@ -121,9 +121,9 @@
         <div class="contact--info__item">nizar.saidi.coder@gmail.com</div>
       </div>
       <div class="contact--info__socials">
-        <NuxtImg src="/Instagram.svg" />
-        <NuxtImg src="/LinkedIn.svg" />
-        <NuxtImg src="/Twitter.svg" />
+        <img src="/Instagram.svg" />
+        <img src="/LinkedIn.svg" />
+        <img src="/Twitter.svg" />
       </div>
     </div>
   </section>
