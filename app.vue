@@ -1,10 +1,10 @@
 <template>
   <div>
-    <div class="gi">HELLO</div>
+    <NuxtPage />
   </div>
 </template>
 <style lang="scss">
-  .gi {
-    color: $secondary-color;
+  .hi {
+    color: red;
   }
 </style>
