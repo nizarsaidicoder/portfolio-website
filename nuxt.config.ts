@@ -14,7 +14,7 @@ export default defineNuxtConfig({
 
   modules: ["@nuxt/image"],
 
-  images: {
-    baseURL: "https://nizaro.netlify.app", // Add your Netlify URL here
+  image: {
+    dir: "public",
   },
 });
