@@ -6,13 +6,16 @@
     <div class="blobs">
       <img
         class="home--blob home--blob-1"
-        src="/blob-1.png" />
+        src="/blob-1.webp"
+        alt="a blob floating" />
       <img
         class="home--blob home--blob-2"
-        src="/blob-2.png" />
+        src="/blob-2.webp"
+        alt="a blob floating" />
       <img
         class="home--blob home--blob-3"
-        src="/blob-3.png" />
+        src="/blob-3.webp"
+        alt="a blob floating" />
     </div>
 
     <div class="home--container__text">
@@ -31,7 +34,7 @@
     <div class="about--container__image">
       <div class="about--container__image--img">
         <img
-          src="/about-img.png"
+          src="/about-img.webp"
           alt="about image" />
       </div>
     </div>
@@ -62,12 +65,12 @@
       :parallax="-1"
       fixed-height="64rem">
       <vueper-slide
-        v-for="i in 5"
+        v-for="i in 3"
         title="EZWIN"
         content="The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary. 
 "
         :key="i"
-        :image="'/slide-' + i + '.png'" />
+        :image="'/slide-' + i + '.webp'" />
     </VueperSlides>
   </section>
   <section
@@ -76,10 +79,12 @@
     <div class="cubes">
       <img
         class="cube cube-1"
-        src="/cube-1.png" />
+        src="/cube-1.webp"
+        alt="cube floating and rotating" />
       <img
         class="cube cube-2"
-        src="/cube-2.png" />
+        src="/cube-2.webp"
+        alt="cube floating and rotating" />
     </div>
     <div class="collaboration--text">
       <h2 class="heading-strong highlight">Collaboration.</h2>
@@ -121,9 +126,15 @@
         <div class="contact--info__item">nizar.saidi.coder@gmail.com</div>
       </div>
       <div class="contact--info__socials">
-        <img src="/Instagram.svg" />
-        <img src="/LinkedIn.svg" />
-        <img src="/Twitter.svg" />
+        <img
+          src="/Instagram.svg"
+          alt="instagram link" />
+        <img
+          src="/LinkedIn.svg"
+          alt="LinkedIn link" />
+        <img
+          src="/Twitter.svg"
+          alt="Twitter link" />
       </div>
     </div>
   </section>
@@ -214,22 +225,40 @@
       width: 30%;
       top: 0;
       left: 0;
-      animation: bounce 8s infinite;
       &-1 {
         top: -10%;
         left: 0%;
+        animation: bounce 8s infinite;
       }
       &-2 {
         top: 0%;
         left: 70%;
+        animation: rotate-360 8s infinite;
       }
       &-3 {
         top: 8%;
-        left: 15%;
+        left: 30%;
+        animation: bounce 8s infinite;
       }
     }
   }
-
+  @keyframes moveRandomly {
+    0% {
+      transform: translate(0, 0);
+    }
+    25% {
+      transform: translate(10%, -10%);
+    }
+    50% {
+      transform: translate(-10%, 10%);
+    }
+    75% {
+      transform: translate(-10%, -10%);
+    }
+    100% {
+      transform: translate(10%, 10%);
+    }
+  }
   .about {
     &--container {
       display: flex;
@@ -248,7 +277,7 @@
           right: -36%;
           width: 100%;
           height: 100%;
-          background-image: url("/blob-img-1.png");
+          background-image: url("/blob-img-1.webp");
           background-size: contain;
           background-repeat: no-repeat;
           z-index: -1;
@@ -261,7 +290,7 @@
           right: 10%;
           width: 100%;
           height: 100%;
-          background-image: url("/blob-img-1.png");
+          background-image: url("/blob-img-1.webp");
           background-size: contain;
           background-repeat: no-repeat;
           z-index: -1;
@@ -533,6 +562,17 @@
     }
     50% {
       transform: rotate(30deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  @keyframes rotate-360 {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(360deg);
     }
     100% {
       transform: rotate(0deg);
