@@ -24,23 +24,23 @@
         <ul
           class="navigation-list"
           :class="isMenuOpen ? 'show-menu appear' : ''">
-          <RouterLink
-            to="/"
+          <a
+            href="#hero"
             @click="toggleMenu"
             class="navigation-item">
-            <p class="navigation-item-text">About</p></RouterLink
+            <p class="navigation-item-text">About</p></a
           >
-          <RouterLink
-            to="/"
+          <a
+            href="#portfolio"
             @click="toggleMenu"
             class="navigation-item">
-            <p class="navigation-item-text">Portfolio</p></RouterLink
+            <p class="navigation-item-text">Portfolio</p></a
           >
-          <RouterLink
-            to="/"
+          <a
+            href="#contact"
             @click="toggleMenu"
             class="navigation-item">
-            <p class="navigation-item-text">Contact</p></RouterLink
+            <p class="navigation-item-text">Contact</p></a
           >
         </ul>
       </div>

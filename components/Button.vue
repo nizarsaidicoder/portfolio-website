@@ -20,7 +20,7 @@
   };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
   .btn {
     padding: 1.2rem 2.4rem;
     border-radius: 4px;

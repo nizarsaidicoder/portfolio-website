@@ -15,7 +15,7 @@
   });
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
   .tag {
     display: inline-block;
     padding: 0.6rem 2.4rem;
