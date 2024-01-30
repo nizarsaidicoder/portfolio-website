@@ -31,15 +31,23 @@
         <div class="contact--info__item">nizar.saidi.coder@gmail.com</div>
       </div>
       <div class="contact--info__socials">
-        <img
-          src="/Instagram.svg"
-          alt="instagram link" />
+        <a
+          href="https://www.instagram.com/nizar_liebert/"
+          target="_blank"
+          ><img
+            src="/Instagram.svg"
+            alt="instagram link"
+        /></a>
         <img
           src="/LinkedIn.svg"
           alt="LinkedIn link" />
-        <img
-          src="/Twitter.svg"
-          alt="Twitter link" />
+        <a
+          href="https://dribbble.com/nizarsaidicoder"
+          target="_blank"
+          ><img
+            src="/Dribbble.svg"
+            alt="Dribbble link"
+        /></a>
       </div>
     </div>
   </section>
