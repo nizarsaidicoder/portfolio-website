@@ -3,11 +3,15 @@
     id="collaboration"
     class="collaboration-container">
     <div class="cubes">
-      <img
+      <NuxtImg
+        quality="70"
+        loading="lazy"
         class="cube cube-1"
         src="/cube-1.webp"
         alt="cube floating and rotating" />
-      <img
+      <NuxtImg
+        quality="70"
+        loading="lazy"
         class="cube cube-2"
         src="/cube-2.webp"
         alt="cube floating and rotating" />

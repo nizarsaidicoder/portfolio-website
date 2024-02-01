@@ -34,17 +34,20 @@
         <a
           href="https://www.instagram.com/nizar_liebert/"
           target="_blank"
-          ><img
+          ><NuxtImg
+            quality="80"
             src="/Instagram.svg"
             alt="instagram link"
         /></a>
-        <img
+        <NuxtImg
+          quality="80"
           src="/LinkedIn.svg"
           alt="LinkedIn link" />
         <a
           href="https://dribbble.com/nizarsaidicoder"
           target="_blank"
-          ><img
+          ><NuxtImg
+            quality="80"
             src="/Dribbble.svg"
             alt="Dribbble link"
         /></a>

@@ -8,22 +8,25 @@
       </h2>
       <h3 class="heading-light">Jump into my works</h3>
     </div>
-    <VueperSlides
-      :parallax="-1"
-      fixed-height="64rem">
-      <vueper-slide
-        v-for="slide in slides"
-        :title="slide.title"
-        :content="slide.content"
-        :key="slide.id"
-        :image="slide.image" />
-    </VueperSlides>
+    <UCarousel
+      v-slot="{ item }"
+      :items="slides"
+      :ui="{ item: 'basis-full' }"
+      class="rounded-lg overflow-hidden"
+      :autoplay="true"
+      arrows
+      indicators>
+      <NuxtImg
+        loading="lazy"
+        quality="70"
+        :src="item.image"
+        class="w-full"
+        draggable="false" />
+    </UCarousel>
   </section>
 </template>
 
 <script setup>
-  import { VueperSlides, VueperSlide } from "vueperslides";
-  import "vueperslides/dist/vueperslides.css";
   const slides = [
     {
       id: 0,
@@ -50,52 +53,6 @@
 </script>
 
 <style lang="scss">
-  .vueperslide {
-    position: relative;
-    height: 100%;
-    &__content-wrapper {
-      position: absolute;
-      z-index: 2;
-      top: 10%;
-      left: 8%;
-      display: flex;
-      color: $secondary-color;
-      text-align: left;
-    }
-    &__title {
-      font-size: 4.8rem;
-      font-weight: 700;
-      margin-bottom: 1.6rem;
-    }
-    &__content {
-      font-size: 1.8rem;
-      font-weight: 500;
-      line-height: 1.6;
-      margin-bottom: 3.2rem;
-      max-width: 50%;
-    }
-    &::after {
-      content: "";
-      position: absolute;
-      display: block;
-      width: 100%;
-      height: 100%;
-      background-image: linear-gradient(
-        to top,
-        rgba(0, 0, 0, 1),
-        rgba(0, 0, 0, 0.1)
-      );
-      top: 0;
-      left: 0;
-    }
-  }
-  .vueperslide__content-wrapper:not(
-      .vueperslide__content-wrapper--outside-top
-    ):not(.vueperslide__content-wrapper--outside-bottom) {
-    align-items: flex-start;
-    text-align: left;
-  }
-
   .portfolio {
     &--container {
       margin: 12.8rem auto;
@@ -110,23 +67,6 @@
         flex-direction: column;
         align-items: center;
         gap: 3.2rem;
-      }
-      & .vueperslides {
-        width: 100%;
-        height: 100%;
-        & .vueperslides__container {
-          width: 100%;
-          height: 100%;
-          & .vueperslides__slide {
-            width: 100%;
-            height: 100%;
-            & img {
-              width: 100%;
-              height: 100%;
-              object-fit: cover;
-            }
-          }
-        }
       }
     }
   }

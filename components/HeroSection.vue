@@ -3,15 +3,21 @@
     id="hero"
     class="hero--container">
     <div class="blobs">
-      <img
+      <NuxtImg
+        quality="60"
+        loading="lazy"
         class="hero--blob hero--blob-1"
         src="/blob-1.webp"
         alt="a blob floating" />
-      <img
+      <NuxtImg
+        quality="60"
+        loading="lazy"
         class="hero--blob hero--blob-2"
         src="/blob-2.webp"
         alt="a blob floating" />
-      <img
+      <NuxtImg
+        quality="60"
+        loading="lazy"
         class="hero--blob hero--blob-3"
         src="/blob-3.webp"
         alt="a blob floating" />

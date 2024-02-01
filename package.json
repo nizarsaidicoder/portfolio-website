@@ -17,6 +17,6 @@
     "vue-router": "^4.2.5"
   },
   "dependencies": {
-    "vueperslides": "^3.5.1"
+    "@nuxt/ui": "^2.13.0"
   }
 }
