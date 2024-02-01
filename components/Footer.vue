@@ -1,8 +1,9 @@
 <template>
   <footer class="footer">
     <div class="footer__logo">NIZAR SAIDI</div>
+    <UDivider />
     <div class="footer__text">
-      <p class="">
+      <p>
         © 2024 Nizar Saidi. All rights reserved. Made with ❤️ in Strasbourg,
         France.
       </p>
@@ -23,7 +24,6 @@
       display: block;
       font-weight: 300;
       margin-left: 1rem;
-      border-bottom: $secondary-color 2px solid;
     }
     &__text {
       display: flex;

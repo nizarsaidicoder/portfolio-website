@@ -9,19 +9,27 @@
       <h3 class="heading-light">Jump into my works</h3>
     </div>
     <UCarousel
-      v-slot="{ item }"
       :items="slides"
       :ui="{ item: 'basis-full' }"
       class="rounded-lg overflow-hidden"
       :autoplay="true"
+      :key="item"
       arrows
       indicators>
-      <NuxtImg
-        loading="lazy"
-        quality="70"
-        :src="item.image"
-        class="w-full"
-        draggable="false" />
+      <template #default="{ item }">
+        <div class="text-center mx-auto carousel">
+          <NuxtImg
+            :src="item.image"
+            :alt="item.title"
+            draggable="false" />
+          <div class="portfolio-project-info">
+            <div class="portfolio-project-info-title">{{ item.title }}</div>
+            <div class="portfolio-project-info-description">
+              {{ item.content }}
+            </div>
+          </div>
+        </div>
+      </template>
     </UCarousel>
   </section>
 </template>
@@ -68,6 +76,28 @@
         align-items: center;
         gap: 3.2rem;
       }
+    }
+  }
+  .carousel {
+    position: relative;
+  }
+  .portfolio-project-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-size: 1.8rem;
+    background-image: linear-gradient(
+      to top,
+      #000000,
+      #0000002e 90%,
+      #00000000
+    );
+    padding: 6.4rem 4.8rem;
+    text-align: left;
+    &-title {
+      font-size: 4.8rem;
+      font-weight: 700;
     }
   }
 </style>
