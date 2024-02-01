@@ -4,7 +4,7 @@
     class="about--container">
     <div class="about--container__image">
       <div class="about--container__image--img">
-        <img
+        <NuxtImg
           src="/about-img.webp"
           alt="about image" />
       </div>
