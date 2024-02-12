@@ -17,8 +17,8 @@
       arrows
       indicators>
       <template #default="{ item }">
-        <div class="text-center mx-auto carousel">
-          <NuxtImg
+        <div class="text-center carousel">
+          <img
             :src="item.image"
             :alt="item.title"
             draggable="false" />
