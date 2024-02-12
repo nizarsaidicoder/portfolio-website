@@ -14,6 +14,16 @@
       class="rounded-lg overflow-hidden"
       :autoplay="true"
       :key="item"
+      :prev-button="{
+        size: 'xl',
+        icon: 'i-heroicons-arrow-left-20-solid',
+        class: 'transform translate-x-1/2',
+      }"
+      :next-button="{
+        size: 'xl',
+        icon: 'i-heroicons-arrow-right-20-solid',
+        class: 'transform -translate-x-1/2',
+      }"
       arrows
       indicators>
       <template #default="{ item }">
