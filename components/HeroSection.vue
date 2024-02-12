@@ -4,19 +4,19 @@
     class="hero--container">
     <div class="blobs">
       <NuxtImg
-        quality="60"
+        quality="80"
         loading="lazy"
         class="hero--blob hero--blob-1"
         src="/blob-1.webp"
         alt="a blob floating" />
       <NuxtImg
-        quality="60"
+        quality="80"
         loading="lazy"
         class="hero--blob hero--blob-2"
         src="/blob-2.webp"
         alt="a blob floating" />
       <NuxtImg
-        quality="60"
+        quality="80"
         loading="lazy"
         class="hero--blob hero--blob-3"
         src="/blob-3.webp"
