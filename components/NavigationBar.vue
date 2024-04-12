@@ -12,16 +12,16 @@
     class="navigation--popup"
     :class="isOpen ? '' : ' closed'">
     <ul class="navigation--items">
-      <li class="navigation--item underline">Home</li>
-      <li class="navigation--item underline">About</li>
-      <li class="navigation--item underline">Portfolio</li>
-      <li class="navigation--item underline">Blog</li>
-      <li class="navigation--item underline">Contact</li>
+      <a class="navigation--item underline">Home</a>
+      <a class="navigation--item underline">About</a>
+      <a class="navigation--item underline">Portfolio</a>
+      <a class="navigation--item underline">Blog</a>
+      <a class="navigation--item underline">Contact</a>
       <ul class="navigation--socials">
-        <li class="navigation--social">Github</li>
-        <li class="navigation--social">Dribbble</li>
-        <li class="navigation--social">Instagram</li>
-        <li class="navigation--social">LinkedIn</li>
+        <a class="navigation--social">Github</a>
+        <a class="navigation--social">Dribbble</a>
+        <a class="navigation--social">Instagram</a>
+        <a class="navigation--social">LinkedIn</a>
       </ul>
     </ul>
     <Icon
@@ -39,7 +39,7 @@
 <style lang="scss">
   .navigation {
     display: flex;
-    position: fixed;
+    position: sticky;
     width: calc(100% - 24rem);
     align-items: center;
     justify-content: space-between;
