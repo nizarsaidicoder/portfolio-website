@@ -1,5 +1,7 @@
 <template>
-  <div class="navigation">
+  <nav
+    class="navigation"
+    :class="{ scrolled: isScrolled }">
     <div class="navigation--logo">
       <img src="/Logo.svg" />
     </div>
@@ -7,44 +9,106 @@
       name="heroicons:bars-3-bottom-right-16-solid"
       class="navigation--menu navigation--menu__opener"
       @click="toggleMenu"></Icon>
-  </div>
-  <div
+  </nav>
+  <nav
     class="navigation--popup"
     :class="isOpen ? '' : ' closed'">
     <ul class="navigation--items">
-      <a class="navigation--item underline">Home</a>
-      <a class="navigation--item underline">About</a>
-      <a class="navigation--item underline">Portfolio</a>
-      <a class="navigation--item underline">Blog</a>
-      <a class="navigation--item underline">Contact</a>
+      <a
+        href="#"
+        class="navigation--item underline"
+        >Home</a
+      >
+      <a
+        href="#"
+        class="navigation--item underline"
+        >About</a
+      >
+      <a
+        href="#"
+        class="navigation--item underline"
+        >Portfolio</a
+      >
+      <a
+        href="#"
+        class="navigation--item underline"
+        >Blog</a
+      >
+      <a
+        href="#"
+        class="navigation--item underline"
+        >Contact</a
+      >
       <ul class="navigation--socials">
-        <a class="navigation--social">Github</a>
-        <a class="navigation--social">Dribbble</a>
-        <a class="navigation--social">Instagram</a>
-        <a class="navigation--social">LinkedIn</a>
+        <a
+          href="#"
+          class="navigation--social"
+          >Github</a
+        >
+        <a
+          href="#"
+          class="navigation--social"
+          >Dribbble</a
+        >
+        <a
+          href="#"
+          class="navigation--social"
+          >Instagram</a
+        >
+        <a
+          href="#"
+          class="navigation--social"
+          >LinkedIn</a
+        >
       </ul>
     </ul>
     <Icon
       name="heroicons:x-mark-solid"
       class="navigation--menu navigation--menu__closer"
       @click="toggleMenu"></Icon>
-  </div>
+  </nav>
 </template>
 
 <script setup>
   const isOpen = ref(false);
   const toggleMenu = () => (isOpen.value = !isOpen.value);
+  const isScrolled = ref(0);
+
+  const handleScroll = () => {
+    isScrolled.value = window.scrollY > 0;
+  };
+  watch(isScrolled, (value) => {
+    console.log(value);
+  });
+  onMounted(() => {
+    window.addEventListener("scroll", handleScroll);
+  });
+
+  onBeforeUnmount(() => {
+    window.removeEventListener("scroll", handleScroll);
+  });
 </script>
 
 <style lang="scss">
+  .scrolled {
+    background-color: $white-color !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 1.2rem 9.6rem !important;
+  }
   .navigation {
     display: flex;
     position: sticky;
+    top: 0;
+    background-color: $primary-color;
+    z-index: 1000;
+    padding: 1.2rem 0;
     width: calc(100% - 24rem);
     align-items: center;
     justify-content: space-between;
     margin: 1.2rem 12rem;
     border-bottom: $black-color 2px solid;
+    transition: all 0.3s;
     &--logo {
       display: flex;
       justify-content: center;
@@ -62,6 +126,7 @@
     }
     &--popup {
       position: fixed;
+      z-index: 100000;
       display: flex;
       justify-content: space-between;
       padding: 0 12rem;
@@ -78,7 +143,6 @@
       flex-direction: column;
       justify-content: center;
       gap: 4.8rem;
-      list-style: none;
     }
     &--item {
       font-size: 6.4rem;

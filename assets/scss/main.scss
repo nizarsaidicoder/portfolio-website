@@ -3,10 +3,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+$primary-color: #fff5e2;
+$black-color: #08274a;
+$accent-color: #dbee9b;
+$gray-color: #868686;
+$white-color: #fff;
+$darkblack-color: #0f0f0f;
 @layer base {
   .font-outline-1 {
-    -webkit-text-stroke: 1px black;
-    
+    background: $black-color;
+    background-size: 100% 100%;
+    background-clip: text;
+    -webkit-text-stroke: 3px transparent;
   }
   .font-outline-3 {
     -webkit-text-stroke: 3px black;
@@ -18,12 +26,6 @@
     -webkit-text-stroke: 4px black;
   }
 }
-$primary-color: #fff5e2;
-$black-color: #08274a;
-$accent-color: #dbee9b;
-$gray-color: #868686;
-$white-color: #fff;
-$darkblack-color: #0f0f0f;
 
 @keyframes moveInLeft {
   0% {
@@ -100,17 +102,19 @@ $darkblack-color: #0f0f0f;
   }
 }
 h1 {
+  /* Heading 1 */
+  font-size: 6.4rem;
+  font-weight: 700;
+  line-height: 118%; /* 75.52px */
+  letter-spacing: -0.64px;
+}
+.heading-primary {
+  font-family: "Open Sans", "Montserrat", sans-serif;
+  font-size: 8.2rem;
   font-weight: 800;
   line-height: 118%;
   letter-spacing: -0.64px;
-  font-size: 9rem;
-}
-.heading-secondary {
-  font-family: "Montserrat", sans-serif;
-  font-size: 9.6rem;
-  font-weight: 900;
-  letter-spacing: 18.56px;
-  text-transform: uppercase;
+  position: relative;
 }
 .heading-light {
   font-family: "Montserrat", sans-serif;
@@ -157,24 +161,19 @@ body {
   font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
   font-size: 2rem;
-  &::-webkit-scrollbar {
-    width: 9px; /* Adjust the width as needed */
-  }
+  // &::-webkit-scrollbar {
+  //   width: 9px; /* Adjust the width as needed */
+  // }
 
-  /* Define the styles for the scrollbar thumb (the draggable handle) */
-  &::-webkit-scrollbar-thumb {
-    border-radius: 6px; /* Add rounded corners to the thumb */
-  }
+  // /* Define the styles for the scrollbar thumb (the draggable handle) */
+  // &::-webkit-scrollbar-thumb {
+  //   background-color: $accent-color; /* Add a background color */
+  // }
 
-  /* Define the styles for the scrollbar track when the thumb is being dragged */
-  &::-webkit-scrollbar-track {
-    background-color: $primary-color; /* Change the background color of the track */
-  }
-
-  /* Optionally, you can also style the scrollbar corner */
-  &::-webkit-scrollbar-corner {
-    background-color: $primary-color; /* Change the background color of the corner */
-  }
+  // /* Define the styles for the scrollbar track when the thumb is being dragged */
+  // &::-webkit-scrollbar-track {
+  //   background-color: $darkblack-color; /* Change the background color of the track */
+  // }
 }
 @media (max-width: 1440px) {
   html {
@@ -198,7 +197,19 @@ body {
 }
 
 .section {
-  margin: 12rem 16rem;
+  margin: 4rem 16rem;
+  padding: 8rem 0;
+  &--white {
+    margin: 8rem 0;
+    padding: 8rem 16rem;
+
+    background-color: $white-color;
+  }
+}
+a,
+a:link,
+a:visited {
+  text-decoration: none;
 }
 
 .underline {
@@ -217,9 +228,18 @@ body {
     width: 80%;
   }
 }
-.accent-color {
-  color: $accent-color;
-}
-.accent-color70 {
-  color: darken($color: $accent-color, $amount: 40%);
+
+.highlight {
+  position: relative;
+  z-index: 2;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 2rem;
+    background-color: rgba($accent-color, 1);
+  }
 }
