@@ -10,11 +10,11 @@
       <div class="hero--content">
         <div>
           <p class="hero--title">
-            Hello,<span style="font-weight: 700"> I'm Nizar.</span>
+            Hello,<span class="font-bold"> I'm Nizar.</span>
           </p>
           <h1 class="hero--description">
             Web Developer & Web Designer Based in
-            <span class="accent-color70">Strasbourg</span>
+            <span class="text-accent-200 font-outline-1">Strasbourg</span>
           </h1>
         </div>
         <Button
