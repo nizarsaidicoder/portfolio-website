@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+$primary-color: #fff5e2;
+$black-color: #08274a;
+$accent-color: #dbee9b;
+$gray-color: #868686;
+$white-color: #fff;
+$darkblack-color: #0f0f0f;
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+  80% {
+    transform: translateX(1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(20rem);
+  }
+  50% {
+    transform: translateY(0rem);
+  }
+  100% {
+    transform: translateY(20rem);
+  }
+}
+@keyframes move-x {
+  0% {
+    transform: translateX(-10rem);
+  }
+  50% {
+    transform: translateX(0rem);
+  }
+  100% {
+    transform: translateX(-10rem);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(30deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes rotate-360 {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes moveRandomly {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(10%, -10%);
+  }
+  50% {
+    transform: translate(-10%, 10%);
+  }
+  75% {
+    transform: translate(-10%, -10%);
+  }
+  100% {
+    transform: translate(10%, 10%);
+  }
+}
+.heading-primary {
+  font-family: "Abril Fatface", cursive;
+  font-size: 9.6rem;
+}
+.heading-secondary {
+  font-family: "Montserrat", sans-serif;
+  font-size: 9.6rem;
+  font-weight: 900;
+  letter-spacing: 18.56px;
+  text-transform: uppercase;
+}
+.heading-light {
+  font-family: "Montserrat", sans-serif;
+  font-size: 5.6rem;
+  font-weight: 100;
+}
+.text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 166.688%;
+  letter-spacing: 1.2px;
+}
+.text-xl {
+  font-family: Montserrat;
+  font-size: 6.4rem;
+  font-weight: 600;
+  line-height: 145%; /* 92.8px */
+  letter-spacing: 0.64px;
+}
+.center-text {
+  text-align: center;
+}
+.heading-strong {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3.2rem;
+  font-weight: 600;
+  line-height: 166.688%;
+  letter-spacing: 1.2px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: $primary-color;
+  color: $black-color;
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+  font-size: 1.6rem;
+  &::-webkit-scrollbar {
+    width: 9px; /* Adjust the width as needed */
+  }
+
+  /* Define the styles for the scrollbar thumb (the draggable handle) */
+  &::-webkit-scrollbar-thumb {
+    border-radius: 6px; /* Add rounded corners to the thumb */
+  }
+
+  /* Define the styles for the scrollbar track when the thumb is being dragged */
+  &::-webkit-scrollbar-track {
+    background-color: $primary-color; /* Change the background color of the track */
+  }
+
+  /* Optionally, you can also style the scrollbar corner */
+  &::-webkit-scrollbar-corner {
+    background-color: $primary-color; /* Change the background color of the corner */
+  }
+}
+@media (max-width: 1440px) {
+  html {
+    font-size: 60%;
+  }
+}
+@media (max-width: 1280px) {
+  html {
+    font-size: 58%;
+  }
+}
+@media (max-width: 1024px) {
+  html {
+    font-size: 50%;
+  }
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 45%;
+  }
+}
