@@ -6,6 +6,8 @@
   <PortfolioSection />
   <CollaborationSection />
   <ContactSection />
+  <HiremeSection />
+  <Footer />
 </template>
 
 <script setup>
