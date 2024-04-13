@@ -75,7 +75,11 @@
   const isScrolled = ref(0);
 
   const handleScroll = () => {
-    isScrolled.value = window.scrollY > 0;
+    if (window.scrollY > 300) {
+      isScrolled.value = true;
+    } else {
+      isScrolled.value = false;
+    }
   };
   watch(isScrolled, (value) => {
     console.log(value);
@@ -94,7 +98,7 @@
     background-color: $white-color !important;
     width: 100% !important;
     margin: 0 !important;
-    padding: 1.2rem 9.6rem !important;
+    padding: 0.6rem 9.6rem !important;
   }
   .navigation {
     display: flex;
@@ -102,7 +106,7 @@
     top: 0;
     background-color: $primary-color;
     z-index: 1000;
-    padding: 1.2rem 0;
+    padding: 0;
     width: calc(100% - 24rem);
     align-items: center;
     justify-content: space-between;

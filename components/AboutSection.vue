@@ -19,21 +19,21 @@
             dedicated to honing my craft through independent coding projects and
             design explorations.
           </p>
-          <a
-            href="/CV.pdf"
-            download="Nizar_Saidi_CV.pdf"
-            ><Button
-              type="primary"
-              class="mt-8"
-              >Download CV</Button
-            ></a
-          >
         </div>
         <img
           src="/about-img.png"
           alt="About image"
           class="about-image" />
       </div>
+      <a
+        href="/CV.pdf"
+        download="Nizar_Saidi_CV.pdf"
+        ><Button
+          type="primary"
+          class="mt-8"
+          >Download CV</Button
+        ></a
+      >
     </div>
   </div>
 </template>
@@ -46,7 +46,7 @@
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      gap: 2.4rem;
+      gap: 1.2rem;
     }
     &-content {
       display: flex;
@@ -59,16 +59,14 @@
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      font-size: 2.4rem;
       gap: 1.6rem;
-      max-width: 64rem;
+      max-width: 52rem;
     }
     &-description {
       color: #666;
     }
     &-image {
-      max-width: 50rem;
-      max-height: 50rem;
+      max-width: 40rem;
     }
   }
 </style>

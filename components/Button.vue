@@ -18,7 +18,7 @@
 
 <style lang="scss">
   .button {
-    padding: 1.8rem 3.2rem;
+    padding: 1.4rem 2.8rem;
     border: 1px solid $black-color;
     border-radius: 3px;
     cursor: pointer;

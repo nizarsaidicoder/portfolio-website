@@ -36,8 +36,8 @@
     justify-content: center;
     gap: 1.2rem;
     align-items: center;
-    width: 24rem;
-    height: 24rem;
+    width: 18rem;
+    height: 18rem;
     border: 1px solid $black-color;
   }
 </style>

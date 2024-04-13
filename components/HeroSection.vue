@@ -37,8 +37,8 @@
       gap: 20rem;
     }
     &--image {
-      width: 60rem;
-      height: 60rem;
+      width: 50rem;
+      height: 50rem;
     }
     &--content {
       display: flex;
