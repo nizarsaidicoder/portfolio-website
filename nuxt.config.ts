@@ -16,5 +16,16 @@ export default defineNuxtConfig({
       },
     },
   },
-  modules: ["@nuxt/image", "nuxt-icon", "@nuxtjs/color-mode"],
+  modules: [
+    "@nuxt/image",
+    "nuxt-icon",
+    "@nuxtjs/color-mode",
+    [
+      "nuxt-mail",
+      {
+        message: { to: "nizar.saidi.coder@gmail.com" },
+        smtp: { host: "smtp.gmail.com", port: 465, secure: true },
+      },
+    ],
+  ],
 });

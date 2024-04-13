@@ -5,6 +5,7 @@
   <TechStackSection />
   <PortfolioSection />
   <CollaborationSection />
+  <ContactSection />
 </template>
 
 <script setup>
