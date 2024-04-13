@@ -100,6 +100,9 @@
     margin: 0 !important;
     padding: 0.6rem 9.6rem !important;
   }
+  .dark-mode .scrolled {
+    background-color: $darkblack-color !important;
+  }
   .navigation {
     display: flex;
     position: sticky;
@@ -166,6 +169,16 @@
       letter-spacing: 0.96px;
       cursor: pointer;
       list-style: none;
+    }
+  }
+  .dark-mode .navigation {
+    background-color: $darkblack-color;
+    border-bottom: $white-color 2px solid;
+    &--item {
+      color: $white-color;
+    }
+    &--social {
+      color: $white-color;
     }
   }
   .hidden {

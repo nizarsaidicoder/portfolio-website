@@ -3,7 +3,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-$primary-color: #fff5e2;
+$primary-color: rgb(255, 245, 226);
 $black-color: #08274a;
 $accent-color: #dbee9b;
 $gray-color: #868686;
@@ -161,6 +161,7 @@ body {
   font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
   font-size: 2rem;
+  // filter: invert(95%) hue-rotate(180deg);
   // &::-webkit-scrollbar {
   //   width: 9px; /* Adjust the width as needed */
   // }
@@ -202,9 +203,11 @@ body {
   &--white {
     margin: 8rem 0;
     padding: 8rem 16rem;
-
     background-color: $white-color;
   }
+}
+.dark-mode .section--white {
+  background-color: $darkblack-color;
 }
 a,
 a:link,

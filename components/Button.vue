@@ -40,4 +40,21 @@
       }
     }
   }
+  .dark-mode .button {
+    &--primary {
+      background-color: $accent-color;
+      color: $black-color;
+      &:hover {
+        background-color: lighten($accent-color, 80%);
+        color: $black-color;
+      }
+    }
+    &--secondary {
+      background-color: $accent-color;
+      color: $black-color;
+      &:hover {
+        background-color: lighten($accent-color, 10%);
+      }
+    }
+  }
 </style>
