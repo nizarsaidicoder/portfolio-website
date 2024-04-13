@@ -4,6 +4,7 @@
   <AboutSection />
   <TechStackSection />
   <PortfolioSection />
+  <CollaborationSection />
 </template>
 
 <script setup>

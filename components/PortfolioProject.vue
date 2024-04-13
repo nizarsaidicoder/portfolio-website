@@ -49,6 +49,7 @@
         }
       }
     }
+
     &--image {
       max-width: 60rem;
       box-shadow: -1.2rem 1.2rem $accent-color;
@@ -61,6 +62,9 @@
       max-width: 52rem;
     }
   }
+  .project--title.highlight::after {
+    bottom: -50%;
+  }
   .dark-mode .project--info {
     h2 {
       color: $white-color;
@@ -68,7 +72,12 @@
   }
   .dark-mode .project--container {
     .project--image {
-      box-shadow: -1.2rem 1.2rem darken($accent-color, 10%);
+      box-shadow: -1.2rem 1.2rem $darkaccent-color;
+    }
+    &:nth-child(even) {
+      .project--image {
+        box-shadow: 1.2rem 1.2rem $darkaccent-color;
+      }
     }
   }
 </style>
