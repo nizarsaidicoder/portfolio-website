@@ -44,6 +44,10 @@ export default {
           800: "#94f0eb",
           900: "#89f0f5",
         },
+        darkaccent: {
+          100: "#E49675",
+          200: "",
+        },
         gray: "#868686",
       },
       fontFamily: {

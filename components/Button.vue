@@ -42,7 +42,7 @@
   }
   .dark-mode .button {
     &--primary {
-      background-color: $accent-color;
+      background-color: $darkaccent-color;
       color: $black-color;
       &:hover {
         background-color: lighten($accent-color, 80%);
@@ -50,7 +50,7 @@
       }
     }
     &--secondary {
-      background-color: $accent-color;
+      background-color: $darkaccent-color;
       color: $black-color;
       &:hover {
         background-color: lighten($accent-color, 10%);

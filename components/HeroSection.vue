@@ -14,7 +14,9 @@
           </p>
           <h1 class="hero--description heading-primary">
             Web Developer & Web Designer Based in
-            <span class="text-accent-200 font-outline-1">Strasbourg</span>
+            <span class="text-accent-200 font-outline-1 dark:text-"
+              >Strasbourg</span
+            >
           </h1>
         </div>
         <Button

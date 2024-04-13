@@ -1,14 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import "./variables.scss";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-$primary-color: rgb(255, 245, 226);
-$black-color: #08274a;
-$accent-color: #dbee9b;
-$gray-color: #868686;
-$white-color: #fff;
-$darkblack-color: #0f0f0f;
+
 @layer base {
   .font-outline-1 {
     background: $black-color;
@@ -107,6 +103,11 @@ h1 {
   font-weight: 700;
   line-height: 118%; /* 75.52px */
   letter-spacing: -0.64px;
+}
+h2 {
+  font-size: 4.8rem;
+  font-weight: 700;
+  line-height: 30px; /* 62.5% */
 }
 .heading-primary {
   font-family: "Open Sans", "Montserrat", sans-serif;
@@ -231,6 +232,9 @@ a:visited {
     width: 80%;
   }
 }
+.dark-mode .underline::after {
+  background-color: $darkaccent-color;
+}
 
 .highlight {
   position: relative;
@@ -245,4 +249,7 @@ a:visited {
     height: 2rem;
     background-color: rgba($accent-color, 1);
   }
+}
+.dark-mode .highlight::after {
+  background-color: $darkaccent-color;
 }
