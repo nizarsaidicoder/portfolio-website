@@ -21,7 +21,7 @@
           </p>
         </div>
         <img
-          src="/about-img.png"
+          src="/images/about-img.png"
           alt="About image"
           class="about-image" />
       </div>
@@ -67,6 +67,13 @@
     }
     &-image {
       max-width: 40rem;
+    }
+  }
+  .dark-mode {
+    .about {
+      &-description {
+        color: $white-color;
+      }
     }
   }
 </style>

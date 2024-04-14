@@ -35,19 +35,19 @@
           target="_blank"
           ><NuxtImg
             quality="80"
-            src="/Instagram.svg"
+            src="images/Instagram.svg"
             alt="instagram link"
         /></a>
         <NuxtImg
           quality="80"
-          src="/LinkedIn.svg"
+          src="images/LinkedIn.svg"
           alt="LinkedIn link" />
         <a
           href="https://github.com/nizarsaidicoder"
           target="_blank"
           ><NuxtImg
             quality="80"
-            src="/github.svg"
+            src="images/github.svg"
             alt="Dribbble link"
         /></a>
       </div>

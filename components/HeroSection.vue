@@ -4,7 +4,7 @@
     class="section section--hero">
     <div class="hero--container">
       <img
-        src="/hero-img.jpg"
+        src="/images/hero-img.jpg"
         alt="Hero image"
         class="hero--image" />
       <div class="hero--content">
@@ -14,7 +14,8 @@
           </p>
           <h1 class="hero--description heading-primary">
             Web Developer & Web Designer Based in
-            <span class="text-accent-200 font-outline-1 dark:text-"
+            <span
+              class="text-accent-200 font-outline-1 dark:text-darkaccent-100"
               >Strasbourg</span
             >
           </h1>

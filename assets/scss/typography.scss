@@ -1,0 +1,48 @@
+h1 {
+  font-size: 6.4rem;
+  font-weight: 700;
+  line-height: 118%;
+  letter-spacing: -0.64px;
+}
+h2 {
+  font-size: 4.8rem;
+  font-weight: 700;
+  line-height: 30px; /* 62.5% */
+}
+.heading-primary {
+  font-family: "Open Sans", "Montserrat", sans-serif;
+  font-size: 6.4rem;
+  font-weight: 800;
+  line-height: 118%;
+  letter-spacing: -0.64px;
+  position: relative;
+}
+.heading-light {
+  font-family: "Montserrat", sans-serif;
+  font-size: 5.6rem;
+  font-weight: 100;
+}
+.text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 166.688%;
+  letter-spacing: 1.2px;
+}
+.text-xl {
+  font-family: Montserrat;
+  font-size: 6.4rem;
+  font-weight: 600;
+  line-height: 145%; /* 92.8px */
+  letter-spacing: 0.64px;
+}
+.center-text {
+  text-align: center;
+}
+.heading-strong {
+  font-family: "Open Sans", "Montserrat", sans-serif;
+  font-size: 3.2rem;
+  font-weight: 600;
+  line-height: 166.688%;
+  letter-spacing: 1.2px;
+}

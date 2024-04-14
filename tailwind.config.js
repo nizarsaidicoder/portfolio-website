@@ -46,7 +46,6 @@ export default {
         },
         darkaccent: {
           100: "#E49675",
-          200: "",
         },
         gray: "#868686",
       },

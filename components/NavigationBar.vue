@@ -3,7 +3,7 @@
     class="navigation"
     :class="{ scrolled: isScrolled }">
     <div class="navigation--logo">
-      <img src="/Logo.svg" />
+      <img src="/images/Logo.svg" />
     </div>
     <Icon
       name="heroicons:bars-3-bottom-right-16-solid"
@@ -66,14 +66,25 @@
       name="heroicons:x-mark-solid"
       class="navigation--menu navigation--menu__closer"
       @click="toggleMenu"></Icon>
+    <!-- <UToggle
+      on-icon="i-heroicons-check-20-solid"
+      off-icon="i-heroicons-x-mark-20-solid"
+      @click="$emit('toggle-color-mode')"
+      :model-value="false" /> -->
   </nav>
 </template>
 
 <script setup>
+  const props = defineProps({
+    lightMode: Boolean,
+  });
   const isOpen = ref(false);
   const toggleMenu = () => (isOpen.value = !isOpen.value);
   const isScrolled = ref(0);
-
+  // emit the toggle color to the parent component
+  const toggleColorMode = () => {
+    emit("toggle-color-mode");
+  };
   const handleScroll = () => {
     if (window.scrollY > 300) {
       isScrolled.value = true;

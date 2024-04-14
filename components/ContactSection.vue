@@ -8,7 +8,7 @@
         <ContactForm />
         <img
           class="contact--icon"
-          src="/send-icon.svg"
+          src="/images/send-icon.svg"
           alt="Send Icon" />
       </div>
     </div>

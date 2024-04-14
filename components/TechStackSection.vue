@@ -8,7 +8,7 @@
           v-for="i in 12">
           <div class="flex flex-col items-center justify-center gap-8">
             <img
-              :src="`/tech-${i}.svg`"
+              :src="`images/tech-${i}.svg`"
               alt="Tech Stack" />
             Tech name
           </div>

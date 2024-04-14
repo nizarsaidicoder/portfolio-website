@@ -1,5 +1,5 @@
 <template>
-  <NavigationBar />
+  <NavigationBar @toggle-color-mode="toggleColorMode" />
   <HeroSection />
   <AboutSection />
   <TechStackSection />
@@ -12,7 +12,10 @@
 
 <script setup>
   const colorMode = useColorMode();
-  definePageMeta({ colorMode: "light" });
+  const toggleColorMode = () => {
+    colorMode.value = colorMode.value === "light" ? "dark" : "light";
+  };
+  definePageMeta({ colorMode: "dark" });
 </script>
 <style lang="scss">
   .dark-mode body {

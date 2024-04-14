@@ -2,7 +2,7 @@
   <div class="project--container">
     <img
       class="project--image"
-      :src="'/' + props.image"
+      :src="'images/' + props.image"
       alt="Project 1" />
     <div class="project--info">
       <h2 class="project--title highlight">{{ props.title }}</h2>
