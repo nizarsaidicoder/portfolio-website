@@ -121,4 +121,14 @@
       }
     }
   }
+  @media (min-width: 1660px) {
+    .tech-card {
+      max-width: 40rem;
+    }
+  }
+  @media (max-width: 1280px) {
+    .tech-card {
+      max-width: 28rem;
+    }
+  }
 </style>

@@ -134,23 +134,25 @@
     gap: 4.8rem;
   }
 
-  @media (min-width: 1600px) {
-    .techstack--icon {
-      width: 14rem;
-      height: 14rem;
+  @media (max-width: 1000px) {
+    .techstack--grid {
+      grid-template-columns: repeat(3, 1fr);
     }
-  }
-
-  @media (max-width: 1200px) {
-    .techstack--icon-container {
-      width: 16rem;
-      height: 16rem;
-    }
-  }
-  @media (max-width: 1024px) {
   }
   @media (max-width: 768px) {
+    .techstack--grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
-  @media (max-width: 500px) {
+  @media (max-width: 600px) {
+    .techstack-section {
+      align-items: center;
+      gap: 4.8rem;
+    }
+  }
+  @media (max-width: 380px) {
+    .techstack--grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 </style>
