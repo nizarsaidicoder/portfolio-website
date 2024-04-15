@@ -98,14 +98,5 @@
     }
   }
   @media (max-width: 500px) {
-    .hero {
-      &--container {
-        gap: 2rem;
-      }
-      &--content {
-        align-items: flex-start;
-        text-align: left;
-      }
-    }
   }
 </style>

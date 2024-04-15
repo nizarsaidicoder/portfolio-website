@@ -19,21 +19,21 @@
             dedicated to honing my craft through independent coding projects and
             design explorations.
           </p>
+          <a
+            href="/CV.pdf"
+            download="Nizar_Saidi_CV.pdf"
+            ><Button
+              type="primary"
+              class="mt-8 about-button"
+              >Download CV</Button
+            ></a
+          >
         </div>
         <img
           src="/images/about-img.png"
           alt="About image"
           class="about-image" />
       </div>
-      <a
-        href="/CV.pdf"
-        download="Nizar_Saidi_CV.pdf"
-        ><Button
-          type="primary"
-          class="mt-8"
-          >Download CV</Button
-        ></a
-      >
     </div>
   </div>
 </template>
@@ -73,6 +73,84 @@
     .about {
       &-description {
         color: $white-color;
+      }
+    }
+  }
+  @media (max-width: 1280px) {
+    .about {
+      &-description {
+        max-width: 45rem;
+        font-size: 1.8rem;
+      }
+      &-image {
+        max-width: 35rem;
+      }
+    }
+  }
+  @media (max-width: 1024px) {
+    .about {
+      &-description {
+        max-width: 40rem;
+        font-size: 1.6rem;
+      }
+      &-image {
+        max-width: 30rem;
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    .about {
+      &-description {
+        max-width: 35rem;
+        font-size: 1.4rem;
+      }
+      &-image {
+        max-width: 25rem;
+        margin-bottom: 4rem;
+      }
+    }
+  }
+  @media (max-width: 600px) {
+    .about {
+      &-container {
+        align-items: center;
+        gap: 2rem;
+      }
+      &-content {
+        align-items: flex-start;
+        gap: 2rem;
+      }
+      &-description {
+        font-size: 1.2rem;
+        max-width: 30rem;
+      }
+      &-image {
+        max-width: 20rem;
+        margin-top: 2rem;
+      }
+      &-button {
+        margin-top: 0.4rem !important;
+        align-self: flex-start;
+      }
+    }
+  }
+  @media (max-width: 480px) {
+    .about {
+      &-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+      }
+      &-text {
+        align-items: center;
+        text-align: center;
+      }
+      &-description {
+        text-align: center;
+        max-width: 42rem;
+      }
+      &-image {
+        display: none;
       }
     }
   }
