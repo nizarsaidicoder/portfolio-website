@@ -14,10 +14,7 @@
           </p>
           <h1 class="hero--description heading-primary">
             Web Developer & Web Designer Based in
-            <span
-              class="text-accent-200 font-outline-1 dark:text-darkaccent-100"
-              >Strasbourg</span
-            >
+            <span class="text-blue-400">Strasbourg</span>
           </h1>
         </div>
         <Button
@@ -37,7 +34,7 @@
     &--container {
       display: flex;
       align-items: center;
-      gap: 20rem;
+      gap: 14rem;
     }
     &--image {
       width: 50rem;
@@ -48,6 +45,67 @@
       flex-direction: column;
       gap: 2.4rem;
       align-items: flex-start;
+    }
+  }
+
+  @media (max-width: 1440px) {
+    .hero {
+      &--container {
+        gap: 10rem;
+      }
+      &--image {
+        width: 45rem;
+        height: 45rem;
+      }
+    }
+  }
+  @media (max-width: 1280px) {
+    .hero {
+      &--container {
+        gap: 8rem;
+      }
+      &--image {
+        width: 40rem;
+        height: 40rem;
+      }
+    }
+  }
+  @media (max-width: 1024px) {
+    .hero {
+      &--container {
+        gap: 6rem;
+      }
+      &--image {
+        width: 35rem;
+        height: 35rem;
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    .hero {
+      &--container {
+        flex-direction: column;
+        gap: 4rem;
+      }
+      &--image {
+        display: none;
+      }
+      &--content {
+        align-items: center;
+        text-align: center;
+        max-width: 60rem;
+      }
+    }
+  }
+  @media (max-width: 500px) {
+    .hero {
+      &--container {
+        gap: 2rem;
+      }
+      &--content {
+        align-items: flex-start;
+        text-align: left;
+      }
     }
   }
 </style>

@@ -62,21 +62,27 @@
         >
       </ul>
     </ul>
-    <Icon
-      name="heroicons:x-mark-solid"
-      class="navigation--menu navigation--menu__closer"
-      @click="toggleMenu"></Icon>
+    <div class="flex flex-col justify-between">
+      <Icon
+        name="heroicons:x-mark-solid"
+        class="navigation--menu navigation--menu__closer"
+        @click="toggleMenu"></Icon>
+      <ToggleSwitch
+        class="py-16"
+        @handleColorMode="$emit('toggle-color-mode')"
+        :colorMode="colorMode"></ToggleSwitch>
+    </div>
     <!-- <UToggle
       on-icon="i-heroicons-check-20-solid"
       off-icon="i-heroicons-x-mark-20-solid"
       @click="$emit('toggle-color-mode')"
-      :model-value="false" /> -->
+      :model-value="lightMode == 'light' ? true : false" /> -->
   </nav>
 </template>
 
 <script setup>
   const props = defineProps({
-    lightMode: Boolean,
+    colorMode: String,
   });
   const isOpen = ref(false);
   const toggleMenu = () => (isOpen.value = !isOpen.value);

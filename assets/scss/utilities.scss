@@ -48,3 +48,18 @@
 .dark-mode .section--white {
   background-color: $darkblack-color;
 }
+@media (max-width: 1440px) {
+  .section {
+    margin: 4rem 12rem;
+  }
+  .section--white {
+    margin: 8rem 0;
+    padding: 8rem 12rem;
+  }
+}
+@media (max-width: 1280px) {
+}
+@media (max-width: 1024px) {
+}
+@media (max-width: 768px) {
+}
