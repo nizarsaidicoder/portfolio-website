@@ -76,6 +76,20 @@
       }
     }
   }
+  @media (min-width: 1800px) {
+    .about {
+      &-content {
+        gap: 0rem;
+      }
+      &-text {
+        max-width: 50%;
+        font-size: 2.4rem;
+      }
+      &-image {
+        max-width: 40%;
+      }
+    }
+  }
   @media (max-width: 1280px) {
     .about {
       &-description {
