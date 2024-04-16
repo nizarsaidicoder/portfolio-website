@@ -8,7 +8,6 @@
   <PortfolioSection />
   <CollaborationSection />
   <ContactSection />
-  <HiremeSection />
   <Footer />
 </template>
 
