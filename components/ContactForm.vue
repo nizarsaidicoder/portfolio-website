@@ -3,7 +3,7 @@
     action="https://formsubmit.co/nizar.saidi.coder@gmail.com"
     method="POST"
     class="contact--form">
-    <div class="flex gap-12">
+    <div class="name--input">
       <input
         type="text"
         placeholder="First Name"
@@ -42,6 +42,10 @@
 </script>
 
 <style lang="scss">
+  .name--input {
+    display: flex;
+    gap: 1.6rem;
+  }
   .contact--form {
     display: flex;
     flex-direction: column;
@@ -54,5 +58,55 @@
     border: 0.2rem solid $accent-color;
     border-radius: 0.8rem;
     font-size: 1.6rem;
+  }
+  @media (min-width: 1660px) {
+  }
+  @media (max-width: 1280px) {
+    .contact--form {
+      min-width: 45%;
+    }
+    .name--input {
+      flex-direction: column;
+      gap: 1.2rem;
+    }
+    .contact--form input,
+    .contact--form textarea {
+      padding: 1.2rem;
+      font-size: 1.4rem;
+    }
+  }
+  @media (max-width: 1024px) {
+    .contact--form {
+      min-width: 40%;
+    }
+    .contact--form input,
+    .contact--form textarea {
+      padding: 1rem;
+      font-size: 1.2rem;
+    }
+  }
+  @media (max-width: 768px) {
+    .contact--form {
+      min-width: 40%;
+    }
+    .contact--form input,
+    .contact--form textarea {
+      padding: 0.8rem;
+      font-size: 1rem;
+    }
+  }
+  @media (max-width: 600px) {
+    .contact--form {
+      min-width: 60%;
+    }
+    .name--input {
+      flex-direction: column;
+      gap: 1.2rem;
+    }
+    .contact--form input,
+    .contact--form textarea {
+      padding: 1.2rem;
+      font-size: 1.4rem;
+    }
   }
 </style>

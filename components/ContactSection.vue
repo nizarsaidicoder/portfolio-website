@@ -4,7 +4,8 @@
     class="section section--white contact--section">
     <div class="contact--container">
       <h1 class="contact--title highlight">Contact Me</h1>
-      <div class="flex w-full justify-between items-center">
+      <div
+        class="flex w-full justify-between items-center max-[600px]:flex-col max-[600px]:gap-12">
         <ContactForm />
         <div class="contact--info">
           <h2>Contacts</h2>
@@ -92,5 +93,53 @@
         }
       }
     }
+  }
+  @media (min-width: 1660px) {
+  }
+  @media (max-width: 1280px) {
+    .contact {
+      &--container {
+        gap: 3.2rem;
+      }
+      &--info {
+        min-width: 40rem;
+        padding: 5.4rem 2.4rem;
+      }
+    }
+  }
+  @media (max-width: 1024px) {
+    .contact {
+      &--info {
+        min-width: 35rem;
+        padding: 4.8rem 2.4rem;
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    .contact {
+      &--info {
+        min-width: 35rem;
+        padding: 4rem 1rem;
+        &__items {
+          gap: 1.2rem;
+        }
+        &__item {
+          font-size: 1.8rem;
+        }
+      }
+    }
+  }
+  @media (max-width: 600px) {
+    .contact {
+      &--container {
+        align-items: center;
+      }
+      &--container {
+        flex-direction: column;
+        gap: 3.2rem;
+      }
+    }
+  }
+  @media (max-width: 500px) {
   }
 </style>
