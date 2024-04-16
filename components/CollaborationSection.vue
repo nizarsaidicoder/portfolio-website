@@ -43,4 +43,29 @@
       color: $white-color;
     }
   }
+  @media (min-width: 1660px) {
+  }
+  @media (max-width: 1280px) {
+    .collaboration {
+      &--description {
+        font-size: 3.2rem;
+      }
+    }
+  }
+  @media (max-width: 1024px) {
+  }
+  @media (max-width: 768px) {
+    .collaboration {
+      &--description {
+        font-size: 2.8rem;
+      }
+    }
+  }
+  @media (max-width: 500px) {
+    .collaboration {
+      &--description {
+        font-size: 2.4rem;
+      }
+    }
+  }
 </style>
