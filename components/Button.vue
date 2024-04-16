@@ -60,25 +60,25 @@
   @media (max-width: 1440px) {
     .button {
       padding: 1.2rem 2.4rem;
-      font-size: 1.8rem;
+      font-size: 2.4rem;
     }
   }
   @media (max-width: 1280px) {
     .button {
       padding: 1rem 2rem;
-      font-size: 1.6rem;
+      font-size: 2rem;
     }
   }
   @media (max-width: 1024px) {
     .button {
       padding: 0.8rem 1.6rem;
-      font-size: 1.4rem;
+      font-size: 1.8rem;
     }
   }
   @media (max-width: 768px) {
     .button {
       padding: 0.6rem 1.2rem;
-      font-size: 1.2rem;
+      font-size: 1.6rem;
     }
   }
 </style>

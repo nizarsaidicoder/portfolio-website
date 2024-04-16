@@ -82,16 +82,7 @@
       }
     }
   }
-  .horizontal-divider {
-    width: 100%;
-    height: 2px;
-    background-image: radial-gradient(
-      50% 50% at 50% 50%,
-      #000 0%,
-      transparent 100%
-    );
-    transition: all 0.2s ease-in-out;
-  }
+  
   .dark-mode {
     .tech-card {
       border-color: $white-color;

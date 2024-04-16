@@ -61,6 +61,21 @@
       color: $white-color;
     }
   }
+  @media (min-width: 1660px) {
+  }
+  @media (max-width: 1280px) {
+  }
+  @media (max-width: 1024px) {
+    .portfolio {
+      &--section {
+        gap: 4.8rem;
+      }
+    }
+  }
+  @media (max-width: 768px) {
+  }
+  @media (max-width: 500px) {
+  }
 </style>
 <!-- 0600242763 -->
 <!-- 0718773654 -->

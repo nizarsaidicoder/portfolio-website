@@ -50,6 +50,9 @@ h2 {
   h1 {
     font-size: 7.2rem;
   }
+  h2 {
+    font-size: 5.6rem;
+  }
   .heading-primary {
     font-size: 7.2rem;
   }
@@ -57,6 +60,9 @@ h2 {
 @media (max-width: 1440px) {
   h1 {
     font-size: 5.6rem;
+  }
+  h2 {
+    font-size: 4.8rem;
   }
   .heading-primary {
     font-size: 5.6rem;
@@ -66,19 +72,25 @@ h2 {
   h1 {
     font-size: 4.8rem;
   }
+  h2 {
+    font-size: 4.2rem;
+  }
   .heading-primary {
     font-size: 4.8rem;
   }
 }
 @media (max-width: 1024px) {
-  h1 {
-    font-size: 4rem;
-  }
   .heading-primary {
     font-size: 4rem;
   }
 }
 @media (max-width: 500px) {
+  h1 {
+    font-size: 3.2rem;
+  }
+  h2 {
+    font-size: 2.8rem;
+  }
   .heading-primary {
     font-size: 3.2rem;
   }

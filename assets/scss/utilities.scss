@@ -48,6 +48,17 @@
 .dark-mode .section--white {
   background-color: $darkblack-color;
 }
+
+.horizontal-divider {
+  width: 100%;
+  height: 2px;
+  background-image: radial-gradient(
+    50% 50% at 50% 50%,
+    #000 0%,
+    transparent 100%
+  );
+  transition: all 0.2s ease-in-out;
+}
 @media (max-width: 1440px) {
   .section {
     margin: 4rem 12rem;
