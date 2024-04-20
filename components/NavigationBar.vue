@@ -5,7 +5,7 @@
     <div class="navigation--logo">
       <img
         v-if="color.value == 'light'"
-        :src="logo" />
+        src="/images/Logo.svg" />
       <img
         v-else
         src="/images/Logo-dark.svg" />
@@ -72,7 +72,9 @@
       <div class="flex flex-col justify-between">
         <div class="flex items-center justify-between">
           <span class="mode">Color Mode</span>
-          <ToggleSwitch class="py-16"></ToggleSwitch>
+          <ToggleSwitch
+            @handle-color-mode="toggleColorMode"
+            class="py-16"></ToggleSwitch>
         </div>
       </div>
     </ul>
@@ -84,11 +86,15 @@
 </template>
 
 <script setup>
+  const props = defineProps({ colorMode: String });
+  const emit = defineEmits(["toggle-color-mode"]);
   const isOpen = ref(false);
   const toggleMenu = () => (isOpen.value = !isOpen.value);
   const isScrolled = ref(0);
-  const logo = ref("/images/Logo.svg");
   const color = ref(useColorMode());
+  const toggleColorMode = () => {
+    emit("toggle-color-mode");
+  };
   const handleScroll = () => {
     if (window.scrollY > 300) {
       isScrolled.value = true;
