@@ -3,12 +3,14 @@
     id="hero-section"
     class="section section--hero">
     <div class="hero--container">
-      <img
+      <NuxtImg
+        quality="90"
         v-if="colorMode.value === 'light'"
         src="/images/hero-img.jpg"
         alt="Hero image"
         class="hero--image" />
-      <img
+      <NuxtImg
+        quality="90"
         v-else
         src="/images/hero-img-dark.jpg"
         alt="Hero image"

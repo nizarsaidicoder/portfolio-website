@@ -29,12 +29,14 @@
             ></a
           >
         </div>
-        <img
+        <NuxtImg
+          quality="90"
           v-if="colorMode.value === 'light'"
           src="/images/about-img.png"
           alt="About image"
           class="about-image" />
-        <img
+        <NuxtImg
+          quality="90"
           v-else
           src="/images/about-img-dark.jpg"
           alt="About image"

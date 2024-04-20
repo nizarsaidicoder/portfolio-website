@@ -1,6 +1,7 @@
 <template>
   <div class="project--container">
-    <img
+    <NuxtImg
+      quality="80"
       class="project--image"
       :src="'images/' + props.image"
       alt="Project 1" />

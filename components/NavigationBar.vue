@@ -3,12 +3,16 @@
     class="navigation"
     :class="{ scrolled: isScrolled }">
     <div class="navigation--logo">
-      <img
+      <NuxtImg
+        quality="90"
         v-if="color.value == 'light'"
-        src="/images/Logo.svg" />
-      <img
+        src="/images/Logo.svg"
+        alt="logo" />
+      <NuxtImg
+        quality="90"
         v-else
-        src="/images/Logo-dark.svg" />
+        src="/images/Logo-dark.svg"
+        alt="logo" />
     </div>
     <Icon
       name="heroicons:bars-3-bottom-right-16-solid"
