@@ -104,7 +104,6 @@
 </template>
 
 <script setup>
-  const props = defineProps({ colorMode: String });
   const emit = defineEmits(["toggle-color-mode"]);
   const isOpen = ref(false);
   const toggleMenu = () => (isOpen.value = !isOpen.value);

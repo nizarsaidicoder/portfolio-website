@@ -1,17 +1,16 @@
 <template>
   <div>
-    <label class="switch">
+    <label
+      class="switch"
+      for="switch">
       <input
+        name="switch"
         type="checkbox"
         @click="handleColorMode" />
       <span class="slider round">
         <Icon
           :name="isDark ? 'heroicons:moon' : 'heroicons:sun'"
           class="text-black-100 icon" />
-        <!-- <Icon
-          :class="isDark ? '' : 'hidden'"
-          name="heroicons:moon"
-          class="text-black-100 icon icon-moon" /> -->
       </span>
     </label>
   </div>

@@ -1,7 +1,6 @@
 <template>
-  <NavigationBar
-    @toggle-color-mode="toggleColorMode"
-    :color-mode="colorMode" />
+  <SpeedInsights />
+  <NavigationBar @toggle-color-mode="toggleColorMode" />
   <HeroSection />
   <AboutSection />
   <TechStackSection />
@@ -12,6 +11,8 @@
 </template>
 
 <script setup>
+  import { SpeedInsights } from "@vercel/speed-insights/vue";
+
   const colorMode = useColorMode();
   const toggleColorMode = () => {
     colorMode.value = colorMode.value === "light" ? "dark" : "light";
