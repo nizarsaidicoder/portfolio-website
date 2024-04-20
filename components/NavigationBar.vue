@@ -3,7 +3,12 @@
     class="navigation"
     :class="{ scrolled: isScrolled }">
     <div class="navigation--logo">
-      <img :src="logo" />
+      <img
+        v-if="color.value == 'light'"
+        :src="logo" />
+      <img
+        v-else
+        src="/images/Logo-dark.svg" />
     </div>
     <Icon
       name="heroicons:bars-3-bottom-right-16-solid"
@@ -89,14 +94,7 @@
   const toggleMenu = () => (isOpen.value = !isOpen.value);
   const isScrolled = ref(0);
   const logo = ref("/images/Logo.svg");
-  const color = ref(props.colorMode);
-  watch(color, (value) => {
-    if (value == "light") {
-      logo.value = "/images/Logo.svg";
-    } else {
-      logo.value = "/images/Logo-dark.svg";
-    }
-  });
+  const color = ref(useColorMode());
   const toggleColorMode = () => {
     emit("toggle-color-mode");
     color.value = color.value == "light" ? "dark" : "light";
@@ -196,7 +194,7 @@
     }
   }
   .dark-mode .navigation {
-    background-color: $darkblack-color;
+    background-color: $darkbody-color;
     border-bottom: $white-color 2px solid;
     &--item {
       color: $white-color;

@@ -4,7 +4,13 @@
     class="section section--hero">
     <div class="hero--container">
       <img
+        v-if="colorMode.value === 'light'"
         src="/images/hero-img.jpg"
+        alt="Hero image"
+        class="hero--image" />
+      <img
+        v-else
+        src="/images/hero-img-dark.jpg"
         alt="Hero image"
         class="hero--image" />
       <div class="hero--content">
@@ -27,7 +33,9 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+  const colorMode = ref(useColorMode());
+</script>
 
 <style lang="scss">
   .hero {

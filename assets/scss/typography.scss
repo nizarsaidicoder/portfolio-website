@@ -47,7 +47,7 @@ h2 {
   letter-spacing: 1.2px;
 }
 .accent {
-  color: darken($accent-color, 20%);
+  color: rgba(148, 219, 81, 0.867);
 }
 .dark-mode .accent {
   color: $darkaccent-color;

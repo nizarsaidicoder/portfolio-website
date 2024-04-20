@@ -45,8 +45,9 @@
     background-color: $white-color;
   }
 }
+
 .dark-mode .section--white {
-  background-color: rgb(13, 71, 73);
+  background-color: $darkblack-color;
 }
 
 .horizontal-divider {

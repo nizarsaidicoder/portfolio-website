@@ -148,7 +148,7 @@
   @media (max-width: 500px) {
   }
   .dark-mode .contact--info {
-    background-color: $darkblack-color;
+    background-color: $darkbody-color;
     color: $white-color;
   }
 </style>

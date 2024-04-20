@@ -30,7 +30,13 @@
           >
         </div>
         <img
+          v-if="colorMode.value === 'light'"
           src="/images/about-img.png"
+          alt="About image"
+          class="about-image" />
+        <img
+          v-else
+          src="/images/about-img-dark.jpg"
           alt="About image"
           class="about-image" />
       </div>
@@ -38,7 +44,9 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+  const colorMode = ref(useColorMode());
+</script>
 
 <style lang="scss">
   .about {

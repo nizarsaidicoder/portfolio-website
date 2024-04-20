@@ -22,7 +22,7 @@
 </script>
 <style lang="scss">
   .dark-mode body {
-    background-color: $darkblack-color;
+    background-color: $darkbody-color;
     color: $white-color;
   }
 </style>
