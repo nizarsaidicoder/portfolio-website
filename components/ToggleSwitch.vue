@@ -1,10 +1,7 @@
 <template>
   <div>
-    <label
-      class="switch"
-      for="switch">
+    <label class="switch">
       <input
-        name="switch"
         type="checkbox"
         @click="handleColorMode" />
       <span class="slider round">
