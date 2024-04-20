@@ -23,10 +23,12 @@
             <span class="accent">Strasbourg</span>
           </h1>
         </div>
-        <Button
-          class="hero--button"
-          type="primary"
-          >Contact me</Button
+        <a href="#contact-section">
+          <Button
+            class="hero--button"
+            type="primary"
+            >Contact me</Button
+          ></a
         >
       </div>
     </div>

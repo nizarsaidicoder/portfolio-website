@@ -9,7 +9,9 @@
           Want to create an amazing website with some magic ! I can work with a
           team of developers and designers, or all alone
         </p>
-        <Button type="primary"> Contact me </Button>
+        <a href="#contact-section">
+          <Button type="primary"> Contact me </Button></a
+        >
       </div>
     </div>
   </div>
