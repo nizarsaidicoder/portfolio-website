@@ -6,7 +6,7 @@
         alt="Tech Icon" />
     </div>
     <div class="tech-card--text">
-      <h3 class="font-bold">{{ name }}</h3>
+      <div class="font-bold">{{ name }}</div>
       <div class="horizontal-divider"></div>
       <p>{{ description }}</p>
     </div>
@@ -82,7 +82,7 @@
       }
     }
   }
-  
+
   .dark-mode {
     .tech-card {
       border-color: $white-color;

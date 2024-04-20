@@ -8,20 +8,24 @@
         type="text"
         placeholder="First Name"
         name="firstName"
+        aria-label="First Name"
         required />
       <input
         type="text"
         name="lastName"
+        aria-label="Last Name"
         placeholder="Last Name" />
     </div>
     <input
       type="email"
       name="email"
       placeholder="Email"
+      aria-label="Email"
       required />
     <textarea
       placeholder="Message"
       name="message"
+      aria-label="Message"
       class="h-[15rem]"></textarea>
     <Button type="primary"
       >Send <Icon name="heroicons:arrow-long-right"

@@ -23,55 +23,69 @@
     class="navigation--popup"
     :class="isOpen ? '' : ' closed'">
     <ul class="navigation--items">
-      <a
-        href="#hero-section"
-        class="navigation--item underline"
-        >Home</a
-      >
-      <a
-        href="#about-section"
-        class="navigation--item underline"
-        >About</a
-      >
-      <a
-        href="#portfolio-section"
-        class="navigation--item underline"
-        >Portfolio</a
-      >
+      <li>
+        <a
+          href="#hero-section"
+          class="navigation--item underline"
+          >Home</a
+        >
+      </li>
+      <li>
+        <a
+          href="#about-section"
+          class="navigation--item underline"
+          >About</a
+        >
+      </li>
+      <li>
+        <a
+          href="#portfolio-section"
+          class="navigation--item underline"
+          >Portfolio</a
+        >
+      </li>
       <!-- <a
         href="#"
         class="navigation--item underline"
         >Blog</a
       > -->
-      <a
-        href="#contact-section"
-        class="navigation--item underline"
-        >Contact</a
-      >
-      <ul class="navigation--socials">
+      <li>
         <a
-          href="https://www.github.com/nizarsaidicoder"
-          target="_blank"
-          class="navigation--social"
-          >Github</a
+          href="#contact-section"
+          class="navigation--item underline"
+          >Contact</a
         >
+      </li>
+      <ul class="navigation--socials">
+        <li>
+          <a
+            href="https://www.github.com/nizarsaidicoder"
+            target="_blank"
+            class="navigation--social"
+            >Github</a
+          >
+        </li>
         <!-- <a
           href="#"
           class="navigation--social"
           >Dribbble</a
         > -->
-        <a
-          href="https://www.instagram.com/nizar_liebert/"
-          target="_blank"
-          class="navigation--social"
-          >Instagram</a
-        >
-        <a
-          href="https://www.linkedin.com/in/nizar-saidi-5a6b71302/"
-          target="_blank"
-          class="navigation--social"
-          >LinkedIn</a
-        >
+        <li>
+          <a
+            href="https://www.instagram.com/nizar_liebert/"
+            target="_blank"
+            class="navigation--social"
+            >Instagram</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/nizar-saidi-5a6b71302/"
+            target="_blank"
+            class="navigation--social"
+            >LinkedIn</a
+          >
+        </li>
       </ul>
       <div class="flex flex-col justify-between">
         <div class="flex items-center justify-between">

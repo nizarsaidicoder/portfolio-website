@@ -4,15 +4,13 @@
     class="section section--hero">
     <div class="hero--container">
       <NuxtImg
-        quality="90"
         v-if="colorMode.value === 'light'"
-        src="/images/hero-img.jpg"
+        src="/images/hero-img.png"
         alt="Hero image"
         class="hero--image" />
       <NuxtImg
-        quality="90"
         v-else
-        src="/images/hero-img-dark.jpg"
+        src="/images/hero-img-dark.png"
         alt="Hero image"
         class="hero--image" />
       <div class="hero--content">

@@ -20,6 +20,10 @@ export default defineNuxtConfig({
           rel: "stylesheet",
         },
       ],
+      //language english
+      htmlAttrs: {
+        lang: "en",
+      },
       meta: [
         { name: "author", content: "Nizar Saidi" },
         { name: "description", content: "Nizar Saidi's portfolio website" },
