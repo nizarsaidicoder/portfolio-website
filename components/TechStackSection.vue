@@ -24,98 +24,97 @@
       name: "HTML5",
       icon: "https://cdn.svgporn.com/logos/html-5.svg",
       description:
-        "HTML is one of my key strengths. I have been using it for over 10 years now.",
+        "With over 6 years of experience, HTML has been an integral part of my coding journey.",
     },
     {
       name: "CSS3",
       icon: "https://cdn.svgporn.com/logos/css-3.svg",
       description:
-        "CSS is one of my key strengths. I have been using it for over 10 years now.",
+        "For over a decade, I've been shaping web aesthetics with CSS.",
     },
     {
       name: "JavaScript",
       icon: "https://cdn.svgporn.com/logos/javascript.svg",
       description:
-        "JavaScript is one of my key strengths. I have been using it for over 10 years now.",
+        "JavaScript is my go-to language for interactive web development.",
     },
     {
       name: "Vue.js",
       icon: "https://cdn.svgporn.com/logos/vue.svg",
       description:
-        "Vue.js is one of my key strengths. I have been using it for over 10 years now.",
+        "Venturing into Vue.js for 2 years, I've marveled at its simplicity and power.",
     },
     {
       name: "React",
       icon: "https://cdn.svgporn.com/logos/react.svg",
       description:
-        "React is one of my key strengths. I have been using it for over 10 years now.",
+        "React is a good friend of mine, but Vue.js is my best friend.",
     },
     {
       name: "Nuxt.js",
       icon: "https://cdn.svgporn.com/logos/nuxt-icon.svg",
       description:
-        "Nuxt.js is one of my key strengths. I have been using it for over 10 years now.",
+        "Nuxt.js is my go-to framework for building static and server-rendered applications using Vue.js.",
     },
     {
       name: "Tailwind CSS",
       icon: "https://cdn.svgporn.com/logos/tailwindcss-icon.svg",
       description:
-        "Tailwind CSS is one of my key strengths. I have been using it for over 10 years now.",
+        "Tailwind CSS is my favorite utility-first CSS framework. I've been using it for over 4 years now.",
     },
     {
       name: "Bootstrap",
       icon: "https://cdn.svgporn.com/logos/bootstrap.svg",
       description:
-        "Bootstrap is one of my key strengths. I have been using it for over 10 years now.",
+        "If you don't need an ultra-customized design, Bootstrap is a great choice for rapid prototyping. I'm good at it too.",
     },
     {
       name: "Sass",
       icon: "https://cdn.svgporn.com/logos/sass.svg",
       description:
-        "Sass is one of my key strengths. I have been using it for over 10 years now.",
+        "Sass is CSS with superpowers. Perfect for collaboration and maintainability. I use it a lot too.",
     },
 
     {
       name: "MongoDB",
       icon: "https://cdn.svgporn.com/logos/mongodb.svg",
       description:
-        "MongoDB is one of my key strengths. I have been using it for over 10 years now.",
+        "MongoDB is my go-to database for NoSQL. Simple, flexible, and scalable.",
     },
     {
       name: "Firebase",
       icon: "https://cdn.svgporn.com/logos/firebase.svg",
       description:
-        "Firebase is one of my key strengths. I have been using it for over 10 years now.",
+        "Firebase is my go-to platform for building web and mobile applications. It's easy to use and has a lot of features.",
     },
     {
       name: "Git",
       icon: "https://cdn.svgporn.com/logos/git-icon.svg",
       description:
-        "Git is one of my key strengths. I have been using it for over 10 years now.",
+        "I use Git for version control. It's a great tool for collaboration and code management.",
     },
     {
       name: "SQL",
       icon: "https://cdn.svgporn.com/logos/mysql-icon.svg",
       description:
-        "GitHub is one of my key strengths. I have been using it for over 10 years now.",
+        "SQL is my go-to language for relational databases. I've got a good grasp of it.",
     },
     {
       name: "Python",
       icon: "https://cdn.svgporn.com/logos/python.svg",
       description:
-        "Python is one of my key strengths. I have been using it for over 10 years now.",
+        "Python, I know it, I love it, I use it. It's a great language for web development.",
     },
     {
       name: "C#",
       icon: "https://cdn.svgporn.com/logos/c-sharp.svg",
-      description:
-        "C# is one of my key strengths. I have been using it for over 10 years now.",
+      description: "C# is my go-to language for building Windows applications.",
     },
     {
       name: "Figma",
       icon: "https://cdn.svgporn.com/logos/figma.svg",
       description:
-        "Figma is one of my key strengths. I have been using it for over 10 years now.",
+        "fI use Figma for UI/UX design. It's a great tool for prototyping and collaboration.",
     },
   ];
 </script>

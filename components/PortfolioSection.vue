@@ -20,23 +20,9 @@
     {
       title: "Project 1",
       image: "project1.jpg",
-      link: "https://example.com",
+      link: "https://ezwin.netlify.app",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet vulputate tristique quam felis. Id phasellus dui orci vulputate consequat nulla proin. Id sit scelerisque neque, proin bibendum diam.",
-    },
-    {
-      title: "Project 2",
-      image: "project2.jpg",
-      link: "https://example.com",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet vulputate tristique quam felis. Id phasellus dui orci vulputate consequat nulla proin. Id sit scelerisque neque, proin bibendum diam.",
-    },
-    {
-      title: "Project 3",
-      image: "project3.jpg",
-      link: "https://example.com",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet vulputate tristique quam felis. Id phasellus dui orci vulputate consequat nulla proin. Id sit scelerisque neque, proin bibendum diam.",
+        "Ezwin is a website i created with my friends in university, the website showcases an algorithm for compressing bmp images. The website is built with HTML, CSS, and JavaScript/Vue. The website is hosted on netlify.",
     },
   ]);
 </script>

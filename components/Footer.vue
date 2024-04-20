@@ -105,4 +105,8 @@
       font-size: 1rem;
     }
   }
+  .dark-mode footer {
+    background-color: $darkblack-color;
+    color: $white-color;
+  }
 </style>

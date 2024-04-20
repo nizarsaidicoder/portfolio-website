@@ -3,7 +3,7 @@
     class="navigation"
     :class="{ scrolled: isScrolled }">
     <div class="navigation--logo">
-      <img src="/images/Logo.svg" />
+      <img :src="logo" />
     </div>
     <Icon
       name="heroicons:bars-3-bottom-right-16-solid"
@@ -88,9 +88,18 @@
   const isOpen = ref(false);
   const toggleMenu = () => (isOpen.value = !isOpen.value);
   const isScrolled = ref(0);
-  // emit the toggle color to the parent component
+  const logo = ref("/images/Logo.svg");
+  const color = ref(props.colorMode);
+  watch(color, (value) => {
+    if (value == "light") {
+      logo.value = "/images/Logo.svg";
+    } else {
+      logo.value = "/images/Logo-dark.svg";
+    }
+  });
   const toggleColorMode = () => {
     emit("toggle-color-mode");
+    color.value = color.value == "light" ? "dark" : "light";
   };
   const handleScroll = () => {
     if (window.scrollY > 300) {
@@ -99,9 +108,6 @@
       isScrolled.value = false;
     }
   };
-  watch(isScrolled, (value) => {
-    console.log(value);
-  });
   onMounted(() => {
     window.addEventListener("scroll", handleScroll);
   });
