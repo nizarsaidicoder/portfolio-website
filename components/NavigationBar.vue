@@ -72,10 +72,7 @@
       <div class="flex flex-col justify-between">
         <div class="flex items-center justify-between">
           <span class="mode">Color Mode</span>
-          <ToggleSwitch
-            class="py-16"
-            @handleColorMode="$emit('toggle-color-mode')"
-            :colorMode="colorMode"></ToggleSwitch>
+          <ToggleSwitch class="py-16"></ToggleSwitch>
         </div>
       </div>
     </ul>
@@ -87,18 +84,11 @@
 </template>
 
 <script setup>
-  const props = defineProps({
-    colorMode: String,
-  });
   const isOpen = ref(false);
   const toggleMenu = () => (isOpen.value = !isOpen.value);
   const isScrolled = ref(0);
   const logo = ref("/images/Logo.svg");
   const color = ref(useColorMode());
-  const toggleColorMode = () => {
-    emit("toggle-color-mode");
-    color.value = color.value == "light" ? "dark" : "light";
-  };
   const handleScroll = () => {
     if (window.scrollY > 300) {
       isScrolled.value = true;

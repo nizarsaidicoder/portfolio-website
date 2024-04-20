@@ -3,7 +3,7 @@
     <label class="switch">
       <input
         type="checkbox"
-        @click="handleColorMode" />
+        @click="toggleColorMode" />
       <span class="slider round">
         <Icon
           :name="isDark ? 'heroicons:moon' : 'heroicons:sun'"
@@ -18,14 +18,14 @@
 </template>
 
 <script setup>
-  const emit = defineEmits(["handleColorMode"]);
-  const props = defineProps({ colorMode: String });
-  const mode = ref(props.colorMode);
-  const isDark = ref(mode.value === "dark");
-  const handleColorMode = () => {
-    isDark.value = !isDark.value;
-    emit("handleColorMode");
+  const colorMode = ref(useColorMode());
+  const isDark = ref(colorMode.value === "dark");
+  const toggleColorMode = () => {
+    colorMode.value = colorMode.value === "light" ? "dark" : "light";
   };
+  watch(colorMode.value, (value) => {
+    definePageMeta({ colorMode: value });
+  });
 </script>
 
 <style lang="scss">
