@@ -10,7 +10,7 @@
       <div class="hero--content">
         <div>
           <p class="hero--title">
-            Hello,<span class="font-bold"> I'm Nizar.</span>
+            {{ $t("welcome") }},<span class="font-bold"> I'm Nizar.</span>
           </p>
           <h1 class="hero--description heading-primary">
             Web Developer & Web Designer Based in

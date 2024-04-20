@@ -23,10 +23,15 @@
                 src="images/Instagram.svg"
                 alt="instagram link"
             /></a>
-            <NuxtImg
-              quality="80"
-              src="images/LinkedIn.svg"
-              alt="LinkedIn link" />
+
+            <a
+              href="https://www.linkedin.com/in/nizar-saidi-5a6b71302/"
+              target="_blank"
+              ><NuxtImg
+                quality="80"
+                src="images/LinkedIn.svg"
+                alt="LinkedIn link"
+            /></a>
             <a
               href="https://github.com/nizarsaidicoder"
               target="_blank"

@@ -38,4 +38,71 @@
     background-color: $black-color;
     color: $white-color;
   }
+  @media (min-width: 1660px) {
+  }
+  @media (max-width: 1280px) {
+    footer {
+      padding: 2rem 8rem;
+      display: flex;
+    }
+    .name {
+      font-size: 3.6rem;
+    }
+    .copyright {
+      font-size: 1.6rem;
+    }
+    .end {
+      font-size: 3.6rem;
+    }
+  }
+  @media (max-width: 1024px) {
+    footer {
+      padding: 2rem 4rem;
+      display: flex;
+      gap: 2rem;
+    }
+    .name {
+      font-size: 3rem;
+    }
+    .end {
+      font-size: 3rem;
+    }
+    .copyright {
+      font-size: 1.4rem;
+    }
+  }
+  @media (max-width: 768px) {
+    footer {
+      padding: 2rem 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+    }
+    .name {
+      font-size: 2.4rem;
+    }
+    .end {
+      font-size: 2.4rem;
+    }
+    .copyright {
+      font-size: 1.2rem;
+    }
+  }
+  @media (max-width: 500px) {
+    footer {
+      padding: 2rem 1rem;
+      display: flex;
+      gap: 2rem;
+    }
+    .name {
+      font-size: 2rem;
+    }
+    .end {
+      font-size: 2rem;
+    }
+    .copyright {
+      font-size: 1rem;
+    }
+  }
 </style>

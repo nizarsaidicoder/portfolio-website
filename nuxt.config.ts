@@ -16,5 +16,12 @@ export default defineNuxtConfig({
       },
     },
   },
-  modules: ["@nuxt/image", "nuxt-icon", "@nuxtjs/color-mode"],
+  modules: ["@nuxt/image", "nuxt-icon", "@nuxtjs/color-mode", "@nuxtjs/i18n"],
+  i18n: {
+    locales: ["en", "fr"],
+    defaultLocale: "fr",
+    compilation: {
+      strictMessage: false,
+    },
+  },
 });

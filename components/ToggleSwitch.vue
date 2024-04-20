@@ -105,4 +105,31 @@
   .slider.round:before {
     border-radius: 50%;
   }
+  @media (min-width: 1660px) {
+  }
+  @media (max-width: 1280px) {
+    .switch {
+      width: 6rem;
+      height: 3rem;
+    }
+    .slider {
+      // height: 3rem;
+      width: 6.5rem;
+      &::before {
+        height: 2.4rem;
+        width: 2.4rem;
+        left: 0.4rem;
+        bottom: 0.3rem;
+      }
+    }
+    .slider .icon {
+      font-size: 1.8rem;
+    }
+  }
+  @media (max-width: 1024px) {
+  }
+  @media (max-width: 768px) {
+  }
+  @media (max-width: 500px) {
+  }
 </style>

@@ -15,68 +15,69 @@
     :class="isOpen ? '' : ' closed'">
     <ul class="navigation--items">
       <a
-        href="#"
+        href="#hero-section"
         class="navigation--item underline"
         >Home</a
       >
       <a
-        href="#"
+        href="#about-section"
         class="navigation--item underline"
         >About</a
       >
       <a
-        href="#"
+        href="#portfolio-section"
         class="navigation--item underline"
         >Portfolio</a
       >
-      <a
+      <!-- <a
         href="#"
         class="navigation--item underline"
         >Blog</a
-      >
+      > -->
       <a
-        href="#"
+        href="#contact-section"
         class="navigation--item underline"
         >Contact</a
       >
       <ul class="navigation--socials">
         <a
-          href="#"
+          href="https://www.github.com/nizarsaidicoder"
+          target="_blank"
           class="navigation--social"
           >Github</a
         >
-        <a
+        <!-- <a
           href="#"
           class="navigation--social"
           >Dribbble</a
-        >
+        > -->
         <a
-          href="#"
+          href="https://www.instagram.com/nizar_liebert/"
+          target="_blank"
           class="navigation--social"
           >Instagram</a
         >
         <a
-          href="#"
+          href="https://www.linkedin.com/in/nizar-saidi-5a6b71302/"
+          target="_blank"
           class="navigation--social"
           >LinkedIn</a
         >
       </ul>
+      <div class="flex flex-col justify-between">
+        <div class="flex items-center justify-between">
+          <span class="mode">Color Mode</span>
+          <ToggleSwitch
+            class="py-16"
+            @handleColorMode="$emit('toggle-color-mode')"
+            :colorMode="colorMode"></ToggleSwitch>
+        </div>
+      </div>
     </ul>
-    <div class="flex flex-col justify-between">
-      <Icon
-        name="heroicons:x-mark-solid"
-        class="navigation--menu navigation--menu__closer"
-        @click="toggleMenu"></Icon>
-      <ToggleSwitch
-        class="py-16"
-        @handleColorMode="$emit('toggle-color-mode')"
-        :colorMode="colorMode"></ToggleSwitch>
-    </div>
-    <!-- <UToggle
-      on-icon="i-heroicons-check-20-solid"
-      off-icon="i-heroicons-x-mark-20-solid"
-      @click="$emit('toggle-color-mode')"
-      :model-value="lightMode == 'light' ? true : false" /> -->
+    <Icon
+      name="heroicons:x-mark-solid"
+      class="navigation--menu navigation--menu__closer"
+      @click="toggleMenu"></Icon>
   </nav>
 </template>
 
@@ -219,6 +220,116 @@
     }
     100% {
       transform: translateX(100%);
+    }
+  }
+  @media (min-width: 1660px) {
+  }
+  @media (max-width: 1280px) {
+    .navigation {
+      width: calc(100% - 12rem);
+      margin: 1.2rem 6rem;
+      &--popup {
+        padding: 0 6rem;
+      }
+      &--logo {
+        img {
+          height: 7rem;
+        }
+      }
+      &--menu {
+        width: 4rem;
+        height: 4rem;
+        &__closer {
+          margin-right: 3rem;
+          width: 4rem;
+          height: 4rem;
+        }
+      }
+    }
+  }
+  @media (max-width: 1024px) {
+    .navigation {
+      &--popup {
+        // padding: 0 3rem;
+      }
+      &--logo {
+        img {
+          height: 6rem;
+        }
+      }
+      &--menu {
+        width: 2.4rem;
+        height: 2.4rem;
+        &__closer {
+          width: 3.2rem;
+          height: 3.2rem;
+        }
+      }
+      &--items {
+        margin-bottom: 20rem;
+      }
+      &--item {
+        font-size: 5.6rem;
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    .navigation {
+      &--popup {
+        // padding: 0 1.6rem;
+      }
+      &--item {
+        font-size: 4.8rem;
+      }
+      &--social {
+        font-size: 1.2rem;
+      }
+      &--logo {
+        img {
+          height: 5rem;
+        }
+      }
+    }
+    .mode {
+      font-size: 1.6rem;
+    }
+  }
+  @media (max-width: 500px) {
+    .navigation {
+      &--popup {
+        flex-direction: column-reverse;
+        justify-content: space-between;
+      }
+      &--menu {
+        &__closer {
+          align-self: flex-end;
+        }
+      }
+      &--item {
+        font-size: 3rem;
+      }
+      &--social {
+        font-size: 1rem;
+      }
+      &--items {
+        margin-bottom: 48rem;
+      }
+      &--socials {
+        gap: 3.2rem;
+      }
+      &--logo {
+        img {
+          height: 4rem;
+        }
+      }
+    }
+    .mode {
+      font-size: 1.4rem;
+    }
+  }
+  @media (max-width: 300px) {
+    .navigation--socials {
+      gap: 2.4rem;
     }
   }
 </style>
