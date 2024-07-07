@@ -4,7 +4,7 @@
     :class="{ scrolled: isScrolled }">
     <div class="navigation--logo">
       <NuxtImg
-        quality="90"
+        quality="95"
         v-if="color.value == 'light'"
         src="/images/Logo.svg"
         alt="logo" />
