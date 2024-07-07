@@ -18,11 +18,18 @@
 <script setup>
   const projects = ref([
     {
-      title: "Project 1",
+      title: "Website",
       image: "project1.jpg",
       link: "https://ezwin.netlify.app",
       description:
         "Ezwin is a website i created with my friends in university, the website showcases an algorithm for compressing bmp images. The website is built with HTML, CSS, and JavaScript/Vue. The website is hosted on netlify.",
+    },
+    {
+      title: "Project 2",
+      image: "project2.png",
+      link: "https://checkers-vue.vercel.app",
+      description:
+        "A chess game built with Vue.js, the game is simple, minimalistic. For the moment it is a local multiplayer game, but i am working on adding an AI to play against. and also a multiplayer feature to play with friends online.",
     },
   ]);
 </script>
