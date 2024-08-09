@@ -31,7 +31,7 @@
               >Contact me</Button
             ></a
           >
-          <a href="#contact-section">
+          <a href="#portfolio-section">
             <Button
               class="hero--button"
               type="secondary"
