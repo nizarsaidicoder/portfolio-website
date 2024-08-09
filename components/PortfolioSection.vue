@@ -38,6 +38,13 @@
       description:
         "A console based pokemon fighting card game built with Java. The game is simple, you can choose a pokemon and fight against the computer. The game is built with Java and is hosted on github.",
     },
+    {
+      title: "Studio Ghibli API",
+      image: "project4.png",
+      link: "https://ghibli-api-a772f592c04e.herokuapp.com/",
+      description:
+        "The API provides informations about all the Studio Ghibli movies and the characters in the movies. The API is hosted on heroku. The API is built with Node.js, Express.js and MongoDB along with web scraping with Python.",
+    },
   ]);
 </script>
 
