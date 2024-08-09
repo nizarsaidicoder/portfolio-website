@@ -3,13 +3,11 @@
     class="navigation"
     :class="{ scrolled: isScrolled }">
     <div class="navigation--logo">
-      <NuxtImg
-        quality="95"
+      <img
         v-if="color.value == 'light'"
         src="/images/Logo.svg"
         alt="logo" />
-      <NuxtImg
-        quality="90"
+      <img
         v-else
         src="/images/Logo-dark.svg"
         alt="logo" />
@@ -266,9 +264,6 @@
   }
   @media (max-width: 1024px) {
     .navigation {
-      &--popup {
-        // padding: 0 3rem;
-      }
       &--logo {
         img {
           height: 6rem;

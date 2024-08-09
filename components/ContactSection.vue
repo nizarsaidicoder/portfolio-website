@@ -84,7 +84,7 @@
       &__item {
         font-size: 2.2rem;
         font-weight: 400;
-        color: $primary-color;
+        color: $white-color;
       }
       &__socials {
         display: flex;

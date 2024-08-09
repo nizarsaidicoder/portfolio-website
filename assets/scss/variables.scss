@@ -1,8 +1,8 @@
-$primary-color: rgb(255, 245, 226);
-$black-color: #08274a;
-$accent-color: #dbee9b;
+$primary-color: rgb(59, 78, 218);
+$black-color: #05172d;
+$accent-color: #eabb22;
 $gray-color: #868686;
 $white-color: #fff;
 $darkblack-color: #0f0f0f;
-$darkaccent-color: #e49675;
-$darkbody-color: #06231c;
+$darkaccent-color: lighten($accent-color, 20%);
+$darkbody-color: #03082c;

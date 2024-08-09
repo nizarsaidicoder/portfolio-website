@@ -33,10 +33,11 @@
       }
     }
     &--secondary {
-      background-color: $accent-color;
+      background-color: transparent;
       color: $white-color;
+      border: 2px solid $white-color;
       &:hover {
-        background-color: darken($accent-color, 10%);
+        background-color: $accent-color;
       }
     }
   }
@@ -50,10 +51,9 @@
       }
     }
     &--secondary {
-      background-color: $darkaccent-color;
-      color: $black-color;
+      color: $white-color;
       &:hover {
-        background-color: lighten($accent-color, 10%);
+        background-color: $accent-color;
       }
     }
   }

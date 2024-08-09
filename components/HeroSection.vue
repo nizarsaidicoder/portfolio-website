@@ -3,7 +3,7 @@
     id="hero-section"
     class="section section--hero">
     <div class="hero--container">
-      <NuxtImg
+      <!-- <NuxtImg
         v-if="colorMode.value === 'light'"
         src="/images/hero-img.png"
         alt="Hero image"
@@ -12,7 +12,7 @@
         v-else
         src="/images/hero-img-dark.png"
         alt="Hero image"
-        class="hero--image" />
+        class="hero--image" /> -->
       <div class="hero--content">
         <div>
           <p class="hero--title">
@@ -23,13 +23,22 @@
             <span class="accent">Strasbourg</span>
           </h1>
         </div>
-        <a href="#contact-section">
-          <Button
-            class="hero--button"
-            type="primary"
-            >Contact me</Button
-          ></a
-        >
+        <div class="buttons">
+          <a href="#contact-section">
+            <Button
+              class="hero--button"
+              type="primary"
+              >Contact me</Button
+            ></a
+          >
+          <a href="#contact-section">
+            <Button
+              class="hero--button"
+              type="secondary"
+              >View works</Button
+            ></a
+          >
+        </div>
       </div>
     </div>
   </div>
@@ -40,11 +49,21 @@
 </script>
 
 <style lang="scss">
+  .buttons {
+    display: flex;
+    gap: 2.4rem;
+  }
   .hero {
     &--container {
       display: flex;
       align-items: center;
       gap: 14rem;
+    }
+    &--title {
+      text-align: center;
+    }
+    &--description {
+      text-align: center;
     }
     &--image {
       width: 50rem;
@@ -54,7 +73,7 @@
       display: flex;
       flex-direction: column;
       gap: 2.4rem;
-      align-items: flex-start;
+      align-items: center;
     }
   }
 
