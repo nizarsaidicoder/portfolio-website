@@ -93,6 +93,23 @@
             class="py-16"></ToggleSwitch>
         </div>
       </div>
+      <div class="flex flex-col justify-between">
+        <div class="flex items-center justify-between">
+          <div>Language</div>
+          <div class="flex justify-between gap-3">
+            <button
+              class="p-3 hover:text-orange-300"
+              @click="handleLanguageChange('en')">
+              EN
+            </button>
+            <button
+              class="p-3 hover:text-orange-300"
+              @click="handleLanguageChange('fr')">
+              FR
+            </button>
+          </div>
+        </div>
+      </div>
     </ul>
     <Icon
       name="heroicons:x-mark-solid"
@@ -107,6 +124,7 @@
   const toggleMenu = () => (isOpen.value = !isOpen.value);
   const isScrolled = ref(0);
   const color = ref(useColorMode());
+  const { setLocale } = useI18n();
   const toggleColorMode = () => {
     emit("toggle-color-mode");
   };
@@ -117,6 +135,12 @@
       isScrolled.value = false;
     }
   };
+
+  const handleLanguageChange = (lang) => {
+    setLocale(lang);
+    localStorage.setItem("lang", lang);
+  };
+
   onMounted(() => {
     window.addEventListener("scroll", handleScroll);
   });
