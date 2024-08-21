@@ -16,10 +16,10 @@
       <div class="hero--content">
         <div>
           <p class="hero--title">
-            {{ $t("welcome") }},<span class="font-bold"> I'm Nizar.</span>
+            {{ $t("welcome") }},<span class="font-bold">{{ $t("nom") }}</span>
           </p>
           <h1 class="hero--description heading-primary">
-            Web Developer & Web Designer Based in
+            {{ $t("heroDesc") }}
             <span class="accent">Strasbourg</span>
           </h1>
         </div>
@@ -28,14 +28,14 @@
             <Button
               class="hero--button"
               type="primary"
-              >Contact me</Button
+              >{{ $t("heroContactButton") }}</Button
             ></a
           >
           <a href="#portfolio-section">
             <Button
               class="hero--button"
               type="secondary"
-              >View works</Button
+              >Portfolio</Button
             ></a
           >
         </div>
