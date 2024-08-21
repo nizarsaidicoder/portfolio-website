@@ -19,102 +19,94 @@
 </template>
 
 <script setup>
+  const { t } = useI18n();
+
   const techs = [
     {
       name: "HTML5",
       icon: "https://cdn.svgporn.com/logos/html-5.svg",
-      description:
-        "With over 6 years of experience, HTML has been an integral part of my coding journey.",
+      description: t("techDescriptions.html"),
     },
     {
       name: "CSS3",
       icon: "https://cdn.svgporn.com/logos/css-3.svg",
-      description:
-        "For over a decade, I've been shaping web aesthetics with CSS.",
+      description: t("techDescriptions.css"),
     },
     {
       name: "JavaScript",
       icon: "https://cdn.svgporn.com/logos/javascript.svg",
-      description:
-        "JavaScript is my go-to language for interactive web development.",
+      description: t("techDescriptions.js"),
+    },
+    {
+      name: "Node.js/Express.js",
+      icon: "https://cdn.svgporn.com/logos/nodejs-icon.svg",
+      description: t("techDescriptions.node"),
     },
     {
       name: "Vue.js",
       icon: "https://cdn.svgporn.com/logos/vue.svg",
-      description:
-        "Venturing into Vue.js for 2 years, I've marveled at its simplicity and power.",
+      description: t("techDescriptions.vue"),
     },
     {
       name: "React",
       icon: "https://cdn.svgporn.com/logos/react.svg",
-      description:
-        "React is a good friend of mine, but Vue.js is my best friend.",
+      description: t("techDescriptions.react"),
     },
     {
       name: "Nuxt.js",
       icon: "https://cdn.svgporn.com/logos/nuxt-icon.svg",
-      description:
-        "Nuxt.js is my go-to framework for building static and server-rendered applications using Vue.js.",
+      description: t("techDescriptions.nuxt"),
     },
     {
       name: "Tailwind CSS",
       icon: "https://cdn.svgporn.com/logos/tailwindcss-icon.svg",
-      description:
-        "Tailwind CSS is my favorite utility-first CSS framework. I've been using it for over 4 years now.",
+      description: t("techDescriptions.tailwind"),
     },
     {
       name: "Bootstrap",
       icon: "https://cdn.svgporn.com/logos/bootstrap.svg",
-      description:
-        "If you don't need an ultra-customized design, Bootstrap is a great choice for rapid prototyping. I'm good at it too.",
+      description: t("techDescriptions.bootstrap"),
     },
     {
       name: "Sass",
       icon: "https://cdn.svgporn.com/logos/sass.svg",
-      description:
-        "Sass is CSS with superpowers. Perfect for collaboration and maintainability. I use it a lot too.",
+      description: t("techDescriptions.sass"),
     },
 
     {
       name: "MongoDB",
       icon: "https://cdn.svgporn.com/logos/mongodb.svg",
-      description:
-        "MongoDB is my go-to database for NoSQL. Simple, flexible, and scalable.",
+      description: t("techDescriptions.mongo"),
     },
     {
       name: "Firebase",
       icon: "https://cdn.svgporn.com/logos/firebase.svg",
-      description:
-        "Firebase is my go-to platform for building web and mobile applications. It's easy to use and has a lot of features.",
+      description: t("techDescriptions.firebase"),
     },
     {
       name: "Git",
       icon: "https://cdn.svgporn.com/logos/git-icon.svg",
-      description:
-        "I use Git for version control. It's a great tool for collaboration and code management.",
+      description: t("techDescriptions.git"),
     },
     {
       name: "SQL",
       icon: "https://cdn.svgporn.com/logos/mysql-icon.svg",
-      description:
-        "SQL is my go-to language for relational databases. I've got a good grasp of it.",
+      description: t("techDescriptions.sql"),
     },
     {
       name: "Python",
       icon: "https://cdn.svgporn.com/logos/python.svg",
-      description:
-        "Python, I know it, I love it, I use it. It's a great language for web development.",
+      description: t("techDescriptions.python"),
     },
     {
       name: "C#",
       icon: "https://cdn.svgporn.com/logos/c-sharp.svg",
-      description: "C# is my go-to language for building Windows applications.",
+      description: t("techDescriptions.c"),
     },
     {
       name: "Figma",
       icon: "https://cdn.svgporn.com/logos/figma.svg",
-      description:
-        "fI use Figma for UI/UX design. It's a great tool for prototyping and collaboration.",
+      description: t("techDescriptions.figma"),
     },
   ];
 </script>
@@ -131,7 +123,6 @@
     // 4 cards per row
     grid-template-columns: repeat(4, 1fr);
     gap: 4.8rem;
-    
   }
 
   @media (max-width: 1000px) {
