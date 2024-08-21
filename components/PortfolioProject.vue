@@ -47,14 +47,14 @@
       &:nth-child(even) {
         flex-direction: row-reverse;
         .project--image {
-          box-shadow: 1.2rem 1.2rem $accent-color;
+          box-shadow: 1.2rem 1.2rem 1.2rem #1111111f;
         }
       }
     }
 
     &--image {
       max-width: 60rem;
-      box-shadow: -1.2rem 1.2rem $accent-color;
+      box-shadow: -1.2rem 1.2rem 1.2rem #11111159;
     }
     &--info {
       display: flex;
@@ -74,11 +74,11 @@
   }
   .dark-mode .project--container {
     .project--image {
-      box-shadow: -1.2rem 1.2rem $darkaccent-color;
+      box-shadow: -1.2rem 1.2rem #ffffff;
     }
     &:nth-child(even) {
       .project--image {
-        box-shadow: 1.2rem 1.2rem $darkaccent-color;
+        box-shadow: 1.2rem 1.2rem #ffffff;
       }
     }
   }

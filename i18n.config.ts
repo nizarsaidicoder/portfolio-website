@@ -39,6 +39,33 @@ export default defineI18nConfig(() => {
           figma:
             "I use Figma for UI/UX design. It's a great tool for prototyping and collaboration.",
         },
+        projects: {
+          p1: {
+            title: "Technical Website",
+            description:
+              "Ezwin is a website I created with my friends at university. It showcases an algorithm for compressing BMP images. The site is built with HTML, CSS, and JavaScript/Vue. It is hosted on Netlify.",
+          },
+          p2: {
+            title: "Local Chess Game",
+            description:
+              "A chess game developed with Vue.js, simple and minimalist. For now, it's a local multiplayer game, but I'm working on adding AI to play against, as well as a multiplayer feature to play online with friends.",
+          },
+          p3: {
+            title: "Pokemon TCG",
+            description:
+              "A console-based Pokémon fighting card game developed with Java. The game is simple; you can choose a Pokémon and battle against the computer. The game is developed with Java and is hosted on GitHub.",
+          },
+          p4: {
+            title: "Studio Ghibli API",
+            description:
+              "An API that provides information about all the Studio Ghibli movies and characters. The API is hosted on Heroku. It is built with Node.js, Express.js, and MongoDB, along with web scraping using Python.",
+          },
+          p5: {
+            title: "Landing Page",
+            description:
+              "A landing page for the amicale core, the club of computer science students in my university. The landing page is built with HTML, CSS, and JavaScript. The website is hosted on vercel.",
+          },
+        },
       },
       fr: {
         welcome: "Bonjour",
@@ -73,6 +100,33 @@ export default defineI18nConfig(() => {
           c: "C# est mon langage de prédilection pour développer des applications Windows.",
           figma:
             "J'utilise Figma pour le design UI/UX. C'est un excellent outil pour le prototypage et la collaboration.",
+        },
+        projects: {
+          p1: {
+            title: "Site Web Technique",
+            description:
+              "Ezwin est un site web que j'ai créé avec mes amis à l'université, il présente un algorithme de compression d'images BMP. Le site est construit avec HTML, CSS et JavaScript/Vue. Il est hébergé sur Netlify.",
+          },
+          p2: {
+            title: "Jeu d'Échecs Local",
+            description:
+              "Un jeu d'échecs développé avec Vue.js, simple et minimaliste. Pour l'instant, c'est un jeu multijoueur local, mais je travaille sur l'ajout d'une IA pour jouer contre, ainsi que sur une fonctionnalité multijoueur pour jouer en ligne avec des amis.",
+          },
+          p3: {
+            title: "Pokemon TCG",
+            description:
+              "Un jeu de cartes de combat Pokémon basé sur la console, développé avec Java. Le jeu est simple, vous pouvez choisir un Pokémon et combattre contre l'ordinateur. Le jeu est développé avec Java et est hébergé sur GitHub.",
+          },
+          p4: {
+            title: "API Studio Ghibli",
+            description:
+              "Une page de destination pour l'Amicale Core, le club des étudiants en informatique de mon université. La page de destination est construite avec HTML, CSS et JavaScript. Le site est hébergé sur Vercel.",
+          },
+          p5: {
+            title: "Siteweb",
+            description:
+              "Une page de destination pour l'Amicale Core, le club des étudiants en informatique de mon université. La page de destination est construite avec HTML, CSS et JavaScript. Le site est hébergé sur Vercel.",
+          },
         },
       },
     },
