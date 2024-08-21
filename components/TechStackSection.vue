@@ -131,6 +131,7 @@
     // 4 cards per row
     grid-template-columns: repeat(4, 1fr);
     gap: 4.8rem;
+    
   }
 
   @media (max-width: 1000px) {

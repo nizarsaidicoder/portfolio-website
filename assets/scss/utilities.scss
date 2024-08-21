@@ -39,15 +39,18 @@
 .section {
   margin: 4rem 16rem;
   padding: 8rem 0;
+  color: $white-color;
   &--white {
     margin: 8rem 0;
     padding: 8rem 16rem;
     background-color: $white-color;
+    color: $black-color;
   }
 }
 
 .dark-mode .section--white {
   background-color: $darkblack-color;
+  color: $white-color;
 }
 
 .horizontal-divider {

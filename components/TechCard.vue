@@ -34,7 +34,8 @@
     border: 2px solid $black-color;
     border-radius: 0.4rem;
     transition: all 0.2s ease-in-out;
-
+    color: $white-color;
+    height: 100%;
     &--icon {
       display: flex;
       align-items: center;

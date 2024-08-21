@@ -16,7 +16,7 @@
           </div>
           <div class="contact--info__socials">
             <a
-              href="https://www.instagram.com/nizar_liebert/"
+              href="https://www.instagram.com/ni_liebert/"
               target="_blank"
               ><NuxtImg
                 quality="80"
@@ -65,6 +65,9 @@
       max-width: 35rem;
     }
     &--info {
+      & > h2 {
+        color: $accent-color;
+      }
       background-color: $black-color;
       display: flex;
       flex-direction: column;
@@ -92,7 +95,6 @@
         align-items: center;
         gap: 3.2rem;
         & img {
-          fill: red !important;
           width: 4.6rem;
           height: 4.6rem;
         }
@@ -148,7 +150,17 @@
   @media (max-width: 500px) {
   }
   .dark-mode .contact--info {
-    background-color: $darkbody-color;
-    color: $white-color;
+    background-color: $darkaccent-color;
+    &__item {
+      color: $black-color;
+    }
+    &__socials {
+      & img {
+        filter: invert(1);
+      }
+    }
+    & > h2 {
+      color: $black-color;
+    }
   }
 </style>

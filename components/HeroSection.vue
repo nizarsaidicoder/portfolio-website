@@ -61,9 +61,11 @@
     }
     &--title {
       text-align: center;
+      color: $white-color;
     }
     &--description {
       text-align: center;
+      color: $white-color;
     }
     &--image {
       width: 50rem;
