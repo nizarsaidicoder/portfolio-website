@@ -14,7 +14,7 @@
         :href="props.link"
         class="project--button"
         target="_blank">
-        <Button type="primary">View Project</Button></a
+        <Button type="primary">{{ $t("viewProject") }}</Button></a
       >
     </div>
   </div>

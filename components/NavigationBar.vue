@@ -25,14 +25,14 @@
         <a
           href="#hero-section"
           class="navigation--item underline"
-          >Home</a
+          >{{ $t("nav.home") }}</a
         >
       </li>
       <li>
         <a
           href="#about-section"
           class="navigation--item underline"
-          >About</a
+          >{{ $t("nav.about") }}</a
         >
       </li>
       <li>

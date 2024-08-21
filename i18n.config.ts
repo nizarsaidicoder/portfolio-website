@@ -5,6 +5,10 @@ export default defineI18nConfig(() => {
     messages: {
       en: {
         // s
+        nav: {
+          home: "Home",
+          about: "About",
+        },
         welcome: "Hello",
         nom: "I'm Nizar.",
         heroDesc: "Developer & Designer Based in",
@@ -13,6 +17,8 @@ export default defineI18nConfig(() => {
         aboutDesc:
           "I'm a developer and designer studying computer science at the University of Strasbourg.<br /><br />Passionate about crafting impactful digital experiences, I specialize in blending creativity with cutting-edge technology to create sleek websites and intuitive interfaces.<br />Outside of my studies, I'm dedicated to honing my craft through independent coding projects and design explorations.",
         downloadCV: "Download CV",
+        viewProject: "View Project",
+
         techDescriptions: {
           html: "With over 6 years of experience, HTML has been an integral part of my coding journey.",
           css: "For over a decade, I've been shaping web aesthetics with CSS.",
@@ -66,8 +72,16 @@ export default defineI18nConfig(() => {
               "A landing page for the amicale core, the club of computer science students in my university. The landing page is built with HTML, CSS, and JavaScript. The website is hosted on vercel.",
           },
         },
+        collab: {
+          title: "Let's Collaborate",
+          text: " Want to create an amazing website or develop an app with some magic ! I can work with a team of developers and designers, or all alone",
+        },
       },
       fr: {
+        nav: {
+          home: "Acceuil",
+          about: "A propos",
+        },
         welcome: "Bonjour",
         nom: " Je suis Nizar.",
         heroDesc: "Développeur & Designer basé à",
@@ -76,6 +90,7 @@ export default defineI18nConfig(() => {
         aboutDesc:
           "Je suis développeur et designer, étudiant en informatique à l'Université de Strasbourg.<br /><br />Passionné par la création d'expériences numériques percutantes, je me spécialise dans le mélange de créativité et de technologies de pointe pour concevoir des sites web élégants et des interfaces intuitives.<br />En dehors de mes études, je me consacre à perfectionner mon savoir-faire à travers des projets de codage indépendants et des explorations en design.",
         downloadCV: "Télécharger le CV",
+        viewProject: "Voir Projet",
         techDescriptions: {
           html: "Avec plus de 6 ans d'expérience, HTML a été une partie intégrante de mon parcours de codage.",
           css: "Depuis plus de dix ans, je façonne l'esthétique du web avec CSS.",
@@ -127,6 +142,10 @@ export default defineI18nConfig(() => {
             description:
               "Une page de destination pour l'Amicale Core, le club des étudiants en informatique de mon université. La page de destination est construite avec HTML, CSS et JavaScript. Le site est hébergé sur Vercel.",
           },
+        },
+        collab: {
+          title: "Collaborons ensemble",
+          text: "Vous souhaitez créer un site web incroyable ou développer une application avec une touche de magie ! Je peux travailler avec une équipe de développeurs et de designers, ou tout seul.",
         },
       },
     },

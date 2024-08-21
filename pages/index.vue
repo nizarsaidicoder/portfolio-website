@@ -8,6 +8,7 @@
   <CollaborationSection />
   <ContactSection />
   <Footer />
+  <Modal />
 </template>
 
 <script setup>
@@ -17,8 +18,6 @@
   const toggleColorMode = () => {
     colorMode.value = colorMode.value === "light" ? "dark" : "light";
   };
-  const { locale, setLocale } = useI18n();
-  setLocale("fr");
   definePageMeta({ colorMode: "light" });
 </script>
 <style lang="scss">

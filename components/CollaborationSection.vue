@@ -4,13 +4,12 @@
     class="section collaboration--section">
     <div class="collaboration--container">
       <div class="collaboration--content">
-        <h1 class="collaboration--title highlight">Let's collaborate</h1>
+        <h1 class="collaboration--title highlight">{{ $t("collab.title") }}</h1>
         <p class="collaboration--description">
-          Want to create an amazing website with some magic ! I can work with a
-          team of developers and designers, or all alone
+          {{ $t("collab.text") }}
         </p>
         <a href="#contact-section">
-          <Button type="primary"> Contact me </Button></a
+          <Button type="primary"> {{ $t("heroContactButton") }} </Button></a
         >
       </div>
     </div>
