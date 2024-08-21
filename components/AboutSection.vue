@@ -1,31 +1,19 @@
 <template>
   <div id="about-section">
     <div class="section section--white about-container">
-      <h1 class="about-title highlight">About me</h1>
+      <h1 class="about-title highlight">{{ $t("aboutTitle") }}</h1>
       <div class="about-content">
         <div class="about-text">
-          <p class="about-description">
-            I'm a web developer and designer studying computer science at the
-            <span class="highlight"> University of Strasbourg </span>.
-          </p>
-          <p class="about-description">
-            Passionate about crafting impactful digital experiences, I
-            specialize in
-            <span class="highlight">blending creativity</span> with cutting-edge
-            technology to create sleek websites and intuitive interfaces.
-          </p>
-          <p class="about-description">
-            <span class="highlight"> Outside of my studies </span>, I'm
-            dedicated to honing my craft through independent coding projects and
-            design explorations.
-          </p>
+          <p
+            class="about-description"
+            v-html="$t('aboutDesc')"></p>
           <a
             href="/CV.pdf"
             download="Nizar_Saidi_CV.pdf"
             ><Button
               type="primary"
               class="mt-8 about-button"
-              >Download CV</Button
+              >{{ $t("downloadCV") }}</Button
             ></a
           >
         </div>
