@@ -71,6 +71,11 @@ export default defineI18nConfig(() => {
             description:
               "A landing page for the amicale core, the club of computer science students in my university. The landing page is built with HTML, CSS, and JavaScript. The website is hosted on vercel.",
           },
+          p6: {
+            title: "Internship Platform",
+            description:
+              "A web application that allows students to find internships. The application is developed with Nuxt.js with AI integration to write cover letters. the internship data has been cleaned and processed by OpenAI in python.",
+          },
         },
         collab: {
           title: "Let's Collaborate",
@@ -141,6 +146,11 @@ export default defineI18nConfig(() => {
             title: "Siteweb",
             description:
               "Une page de destination pour l'Amicale Core, le club des étudiants en informatique de mon université. La page de destination est construite avec HTML, CSS et JavaScript. Le site est hébergé sur Vercel.",
+          },
+          p6: {
+            title: "Plateforme de stages",
+            description:
+              "Une application web qui permet aux étudiants de trouver des stages. L'application est développée avec Nuxt.js avec intégration de l'IA pour rédiger des lettres de motivation. les données des stages ont été soigné et traité par OpenAI en python.",
           },
         },
         collab: {

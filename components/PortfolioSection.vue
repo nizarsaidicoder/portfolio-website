@@ -48,6 +48,12 @@
       link: "https://amicale-core.vercel.app/",
       description: t("projects.p5.description"),
     },
+    {
+      title: t("projects.p6.title"),
+      image: "project6.png",
+      link: "https://stagecoon.vercel.app",
+      description: t("projects.p6.description"),
+    },
   ]);
 </script>
 
